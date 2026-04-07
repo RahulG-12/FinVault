@@ -1,7 +1,13 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api.routes import auth, documents, roles, users, rag
 from app.core.database import engine, Base
+
+# ✅ Import all 3 models so SQLAlchemy creates all tables
+from app.models.user import User
+from app.models.document import Document
+from app.models.role import Role
+
+from app.api.routes import auth, documents, roles, users, rag
 
 Base.metadata.create_all(bind=engine)
 
