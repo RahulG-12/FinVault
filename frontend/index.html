@@ -716,10 +716,7 @@
         </div>
       </div>
     </div>
-
-  </div><!-- /main -->
-</div><!-- /app -->
-
+    
     <!-- Sample Documents -->
     <div class="page" id="page-samples">
       <div style="background:linear-gradient(135deg,#0a0f1e 0%,#1a2e5a 100%);border-radius:16px;padding:28px 32px;margin-bottom:24px;position:relative;overflow:hidden">
@@ -755,6 +752,10 @@
             </div>
           </div>
         </div>
+
+  </div><!-- /main -->
+</div><!-- /app -->
+
 
         <!-- Reports -->
         <div>
@@ -858,7 +859,7 @@
 <div id="toast-container"></div>
 
 <script>
-const API = 'http://127.0.0.1:8000';
+const API = 'https://finvault-2.onrender.com';
 let token = localStorage.getItem('fv_token') || '';
 let currentUser = JSON.parse(localStorage.getItem('fv_user') || 'null');
 let allDocs = [];
