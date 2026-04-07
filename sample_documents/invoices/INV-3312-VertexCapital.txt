@@ -1,0 +1,84 @@
+INVOICE
+================================================================================
+Invoice Number  : INV-3312
+Invoice Date    : March 28, 2024
+Due Date        : April 27, 2024
+Payment Terms   : Net 30
+
+FROM (Vendor):
+  NovaSys Financial Technology Ltd.
+  WeWork Galaxy, 43 Residency Road
+  Bengaluru, Karnataka 560025
+  GSTIN: 29AABCN9876K1ZM
+  PAN  : AABCN9876K
+
+TO (Bill To):
+  Vertex Capital Management Pvt. Ltd.
+  Unit 1201, One BKC Tower
+  Bandra Kurla Complex, Mumbai 400051
+  GSTIN: 27AABCV4532P1ZQ
+  PAN  : AABCV4532P
+
+================================================================================
+FINANCIAL TECHNOLOGY SERVICES — DETAILED BILLING
+================================================================================
+Item  Description                           Qty   Unit Rate     Amount (INR)
+----  -------------------------------------  ----  ------------  ------------
+1     Algorithmic Trading Platform           1     1,250,000.00  1,250,000.00
+      (White-label license - Q1 2024)
+2     Real-time Market Data Feed             3     180,000.00      540,000.00
+      (Bloomberg, NSE, BSE integrations)
+3     Risk Management Engine Module          1     475,000.00      475,000.00
+      (VaR & Stress Testing Suite)
+4     Regulatory Compliance Reporting        1     320,000.00      320,000.00
+      (SEBI, RBI automated filings)
+5     Portfolio Analytics Dashboard          8     55,000.00       440,000.00
+      (Per fund manager seat × 8 users)
+6     API Integration & Custom Dev           85    4,800.00        408,000.00
+      (Development hours)
+7     Data Migration & Onboarding            1     185,000.00      185,000.00
+      (One-time setup fee)
+
+================================================================================
+BILLING SUMMARY
+================================================================================
+Subtotal (Before Tax)                                        INR  3,618,000.00
+IGST @ 18%                                                   INR    651,240.00
+--------------------------------------------------------------------
+INVOICE TOTAL                                                INR  4,269,240.00
+Amount in Words: Rupees Forty-Two Lakhs Sixty-Nine Thousand Two Hundred Forty Only
+
+================================================================================
+CLIENT FINANCIAL RISK ASSESSMENT
+================================================================================
+Client Profile: Vertex Capital Management — Category II AIF registered with SEBI
+AUM Under Management: Approximately INR 4,200 Crore
+Revenue (FY2023-24 Estimated): INR 38.5 Crore
+Current Ratio: 1.82 (Adequate liquidity)
+Debt-to-Equity Ratio: 0.43 (Low leverage — LOW RISK)
+Payment History Score: 96/100 (Excellent)
+Previous Invoices: 14 invoices, zero delinquencies
+Average Payment Speed: 18 days (ahead of Net 30 terms)
+Credit Limit: INR 10,000,000 | Current Exposure: INR 4,269,240
+Risk Classification: LOW — GREEN
+
+================================================================================
+PAYMENT INSTRUCTIONS
+================================================================================
+RTGS/NEFT Details:
+  Beneficiary: NovaSys Financial Technology Ltd.
+  Bank: ICICI Bank Ltd., Koramangala Branch, Bengaluru
+  Account No.: 0921 0123 4567
+  IFSC: ICIC0000921
+  Reference: INV-3312/VERTEX/MAR24
+
+UPI: payments@novasys.in (for amounts up to INR 1 lakh per transaction)
+
+================================================================================
+CERTIFICATE OF COMPLETION
+================================================================================
+All deliverables under this invoice have been completed and accepted as per the
+Statement of Work (SOW-VC-2024-001) signed on January 15, 2024.
+Client Acceptance Sign-off: Pending (due by April 5, 2024)
+
+Authorised by: Priya Nair, Head of Finance, NovaSys Financial Technology Ltd.

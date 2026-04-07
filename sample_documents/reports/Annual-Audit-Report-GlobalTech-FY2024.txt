@@ -1,0 +1,122 @@
+================================================================================
+GLOBALTECH SOLUTIONS PVT. LTD.
+ANNUAL INTERNAL AUDIT REPORT — FY 2023-24
+Conducted by: PrimeAudit & Associates LLP (ICAI Reg: 001987N)
+Audit Period: April 1, 2023 – March 31, 2024
+Report Date: May 15, 2024
+CONFIDENTIAL
+================================================================================
+
+1. AUDIT MANDATE & SCOPE
+--------------------------------------------------------------------------------
+This internal audit was conducted pursuant to the Board Resolution dated
+March 20, 2023 and covers all business operations of GlobalTech Solutions Pvt.
+Ltd. including revenue recognition, accounts payable/receivable, treasury
+operations, payroll, fixed assets, and IT general controls.
+
+Audit Standards Applied: Standards on Internal Audit (SIA) issued by ICAI;
+COSO Internal Control — Integrated Framework (2013 Edition).
+
+2. EXECUTIVE AUDIT OPINION
+--------------------------------------------------------------------------------
+OVERALL RATING: SATISFACTORY WITH SIGNIFICANT OBSERVATIONS
+
+The internal control environment at GlobalTech Solutions is generally adequate
+with some material weaknesses identified in accounts receivable management,
+vendor due diligence, and IT access controls. Immediate remediation is required
+for three HIGH severity findings detailed in Section 5.
+
+3. FINANCIAL PERFORMANCE OVERVIEW (FY 2023-24)
+--------------------------------------------------------------------------------
+                              FY 2023-24    FY 2022-23    Change
+                              ----------    ----------    ------
+Revenue                       INR 284.6 Cr  INR 231.2 Cr  +23.1%
+Operating Expenses            INR 198.3 Cr  INR 162.4 Cr  +22.1%
+EBITDA                        INR  86.3 Cr  INR  68.8 Cr  +25.4%
+EBITDA Margin                       30.3%         29.8%   +50 bps
+PAT                           INR  52.1 Cr  INR  39.6 Cr  +31.6%
+Total Assets                  INR 412.8 Cr  INR 318.4 Cr  +29.6%
+Total Debt                    INR  84.2 Cr  INR  61.8 Cr  +36.2%
+Debt-to-Equity                       0.28x         0.25x  +12%
+Cash & Equivalents            INR  98.6 Cr  INR  72.3 Cr  +36.4%
+
+Financial Health Assessment: STRONG — GlobalTech maintains healthy leverage
+with a D/E ratio of 0.28x, interest coverage of 8.4x, and strong free cash
+flow generation of INR 64.8 Crore. No covenant issues identified.
+
+4. ACCOUNTS RECEIVABLE AUDIT
+--------------------------------------------------------------------------------
+Total AR Balance (Mar 31, 2024): INR 94.8 Crore
+Debtors > 90 days              : INR 18.4 Crore (19.4% of AR — HIGH)
+Provision for doubtful debts   : INR  6.2 Crore (vs recommended INR 11.8 Cr)
+
+>>> FINDING AR-01 (HIGH SEVERITY): UNDER-PROVISIONING <<<
+Recommendation: Increase bad debt provision by INR 5.6 Crore to adequately
+reflect the aged receivables risk. Top 3 risky debtors:
+  - Meridian Financial Advisors: INR 6.8 Cr (overdue >90 days, financially stressed)
+  - Sunrise Retail Chain: INR 4.2 Cr (in NCLT proceedings)
+  - Apex Logistics: INR 2.6 Cr (disputed — legal action initiated)
+
+5. HIGH SEVERITY AUDIT FINDINGS
+--------------------------------------------------------------------------------
+
+FINDING H-01: ACCOUNTS RECEIVABLE PROVISIONING (as noted above)
+Risk: Profit overstatement by ~INR 5.6 Crore; regulatory scrutiny risk.
+Management Response Due: June 30, 2024
+
+FINDING H-02: VENDOR PAYMENT CONTROLS
+Issue: 14 vendor payments totaling INR 3.84 Crore were processed without
+complete three-way matching (PO → GRN → Invoice). Of these, 3 payments
+(INR 82 lakh) were made to vendors not in the approved master list.
+Risk: Fraud risk, potential fictitious vendor payments.
+Recommended Action: Implement mandatory system-enforced three-way match;
+conduct forensic review of the 3 suspicious payments.
+Management Response Due: May 31, 2024
+
+FINDING H-03: PRIVILEGED ACCESS MANAGEMENT (IT CONTROLS)
+Issue: 23 ex-employees retain active system access in ERP (SAP S/4HANA).
+4 of these accounts logged activity after employment cessation dates.
+Risk: Data breach, unauthorized transactions, regulatory violation (IT Act 2000).
+Recommended Action: Immediate deactivation of all 23 accounts; forensic log
+review for the 4 active post-separation accounts; implement automated
+joiner-mover-leaver (JML) process.
+Management Response Due: Immediate (within 5 business days)
+
+6. MEDIUM SEVERITY FINDINGS (SUMMARY)
+--------------------------------------------------------------------------------
+M-01: Treasury — FX hedge ratio at 45% vs policy of 70% (shortfall: 25%)
+M-02: Fixed Assets — Physical verification not conducted for FY24 (overdue)
+M-03: Payroll — Manual override of payroll system for 8 employees; undocumented
+M-04: GST — Input tax credit reconciliation discrepancy of INR 14.2 lakh
+
+7. COMPLIANCE STATUS
+--------------------------------------------------------------------------------
+Companies Act 2013                : COMPLIANT
+Income Tax Act 1961               : COMPLIANT (pending assessment for AY2022-23)
+GST (CGST/SGST/IGST)             : MINOR OBSERVATIONS (see M-04)
+FEMA 1999                         : COMPLIANT
+Labour Laws (PF, ESI, Gratuity)  : COMPLIANT
+IT Act 2000                       : NON-COMPLIANT (see H-03 — immediate action req.)
+SEBI (if applicable)              : NOT APPLICABLE
+
+8. RECOMMENDATIONS SUMMARY TABLE
+--------------------------------------------------------------------------------
+Priority  Finding   Description                         Owner        Deadline
+--------  --------  ----------------------------------  -----------  ----------
+HIGH      H-01      Increase AR provision by INR 5.6Cr  CFO          Jun 30, 24
+HIGH      H-02      Vendor payment control overhaul     VP Finance   May 31, 24
+HIGH      H-03      Deactivate 23 ex-employee accounts  CISO         May 20, 24
+MEDIUM    M-01      Improve FX hedging to 70%           Treasury     Jul 31, 24
+MEDIUM    M-02      Complete FA physical verification   Finance Ops  Jun 30, 24
+LOW       L-01-08   (8 low severity observations)       Various      Sep 30, 24
+
+9. AUDITOR'S DECLARATION
+--------------------------------------------------------------------------------
+We confirm that this report represents an independent assessment conducted
+in accordance with applicable auditing standards. Our opinion is not modified
+in respect of any matters identified in this report.
+
+Lead Auditor: CA Vikram Sharma (M.No. 098765) | Partner, PrimeAudit & Assoc.
+Audit Team:   CA Sunita Rao, CA Ravi Menon, CPA Anjali Desai
+Signed:       May 15, 2024
+================================================================================

@@ -1,0 +1,76 @@
+INVOICE
+================================================================================
+Invoice Number  : INV-0891
+Invoice Date    : April 1, 2024
+Due Date        : April 30, 2024
+Payment Terms   : Net 30 | OVERDUE ACCOUNT — COLLECTIONS FLAG
+
+FROM (Vendor):
+  PrimeAudit & Associates LLP
+  Plot No. 45, Sector 32, Institutional Area
+  Gurugram, Haryana 122001
+  GSTIN: 06AABCP2211D1ZA | ICAI Firm Reg: 001987N
+
+TO (Bill To):
+  Meridian Financial Advisors Pvt. Ltd.
+  3rd Floor, Nirlon Knowledge Park
+  Goregaon East, Mumbai 400063
+  GSTIN: 27AABCM7812R1ZP
+
+================================================================================
+PROFESSIONAL AUDIT & ADVISORY SERVICES
+================================================================================
+Item  Description                           Period          Amount (INR)
+----  -------------------------------------  --------------  ------------
+1     Statutory Audit — FY 2023-24           Apr–Mar 2024    680,000.00
+      (Companies Act 2013 compliance)
+2     Tax Audit u/s 44AB                     FY 2023-24      185,000.00
+3     GST Reconciliation & Filing            Q3 & Q4 FY24    120,000.00
+4     FEMA Compliance Review                 FY 2023-24       95,000.00
+      (Foreign investment scrutiny)
+5     Internal Control Assessment            FY 2023-24      240,000.00
+      (COSO Framework evaluation)
+6     Management Letter & Recommendations    FY 2023-24       45,000.00
+7     SEBI Compliance Verification           FY 2023-24      165,000.00
+      (Investment Advisor Regulations 2013)
+
+================================================================================
+BILLING SUMMARY
+================================================================================
+Professional Fees Subtotal                                   INR  1,530,000.00
+Late Payment Surcharge (Invoice INV-0789, overdue 62 days)   INR     84,150.00
+  (18% p.a. on INR 930,000 × 62/365 days)
+GST @ 18% (IGST)                                            INR    291,267.00
+--------------------------------------------------------------------
+TOTAL AMOUNT DUE                                             INR  1,905,417.00
+
+================================================================================
+CRITICAL FINANCIAL RISK FLAGS — COLLECTIONS ESCALATION
+================================================================================
+*** URGENT: THIS ACCOUNT HAS BEEN ESCALATED TO COLLECTIONS ***
+
+Outstanding Invoice History:
+  INV-0789 (Jan 15, 2024)   INR  930,000  OVERDUE 62 DAYS — UNPAID
+  INV-0823 (Feb 28, 2024)   INR  620,000  OVERDUE 31 DAYS — UNPAID
+  INV-0891 (Apr 01, 2024)   INR 1,905,417 CURRENT
+  -------------------------------------------------------
+  TOTAL OUTSTANDING         INR 3,455,417
+
+Client Financial Distress Indicators Observed:
+  - Debt-to-Equity ratio spiked to 4.2x (from 1.8x in FY23) — CRITICAL
+  - Operating cash flow negative for 2 consecutive quarters
+  - Two key fund managers resigned in Q4 FY24
+  - SEBI issued show-cause notice (ref: SEBI/HO/ISD/2024/0312) in March 2024
+  - Three major institutional clients withdrew mandates (AUM reduced 34%)
+  - Net worth erosion: INR 42 Crore → INR 28 Crore in 12 months
+  - Interest coverage ratio: 0.8x (below 1.0x = DANGER ZONE)
+  - Probability of default estimate (internal model): 34% within 12 months
+
+Recommended Action: Suspend further services. Pursue legal recovery.
+Legal Notice Draft: Ref. PA/LEGAL/2024/MFA/001 — to be issued April 7, 2024
+
+================================================================================
+CONTACT FOR PAYMENT DISPUTES
+================================================================================
+Accounts Receivable: Sunita Rao | ar@primeaudit.in | +91-98765-43210
+Collections Escalation: Vikram Sharma (Partner) | v.sharma@primeaudit.in

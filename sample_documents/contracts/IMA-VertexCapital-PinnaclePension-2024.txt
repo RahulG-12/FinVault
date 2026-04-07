@@ -1,0 +1,185 @@
+================================================================================
+INVESTMENT MANAGEMENT AGREEMENT
+================================================================================
+Agreement Number  : IMA-VC-2024-007
+Effective Date    : April 1, 2024
+Investment Fund   : Vertex Opportunities Fund III
+SEBI Registration : IN/AIF2/23-24/1234 (Category II AIF)
+Governing Law     : Laws of India | SEBI AIF Regulations 2012
+
+INVESTMENT MANAGER:
+  Vertex Capital Management Pvt. Ltd. ("Manager")
+  Unit 1201, One BKC Tower, Bandra Kurla Complex, Mumbai 400051
+  SEBI Registration (IA): INA000012345 | CIN: U67190MH2014PTC254891
+
+INVESTOR:
+  Pinnacle Pension Trust ("Investor")
+  9th Floor, Express Towers, Nariman Point, Mumbai 400021
+  PAN: AABCP3456R | Investment Category: Domestic Institutional Investor
+
+================================================================================
+SECTION 1: INVESTMENT COMMITMENT & FUND TERMS
+================================================================================
+1.1 Commitment Amount:
+    The Investor hereby commits INR 200,00,00,000 (INR 200 Crore) to
+    Vertex Opportunities Fund III ("Fund"), subject to the terms hereof.
+
+1.2 Drawdown Schedule:
+    Capital shall be drawn down in tranches as follows:
+    Tranche  Amount (Crore)  Expected Call Date   Purpose
+    -------  --------------  ------------------   --------------------------------
+    1        INR 60 Cr       April 15, 2024       Initial portfolio companies (3)
+    2        INR 50 Cr       August 1, 2024       Follow-on investments
+    3        INR 50 Cr       January 1, 2025      New deal pipeline
+    4        INR 40 Cr       July 1, 2025         Reserve + final deployment
+
+1.3 Investment Strategy:
+    The Fund shall invest in:
+    a) Unlisted equity and equity-linked instruments in Indian companies
+    b) Structured credit to mid-market companies (revenue INR 100–500 Cr)
+    c) Special situations / stressed asset opportunities
+    d) Maximum 30% in listed securities (secondary market)
+    
+    Target sectors: Financial services, technology-enabled businesses,
+    consumer brands, healthcare, and infrastructure-adjacent companies.
+    
+    Prohibited investments: Real estate (direct), commodities, derivatives
+    (except for hedging), foreign securities (without FEMA approval).
+
+1.4 Fund Life & Extension:
+    Fund Life: 7 years from final close (investment period: 3 years)
+    Extension options: 2 × 1-year extensions (Manager discretion)
+    Estimated Final Close: June 30, 2024
+    Target Fund Size: INR 1,500 Crore (current: INR 1,380 Crore)
+
+================================================================================
+SECTION 2: FEES & ECONOMICS
+================================================================================
+2.1 Management Fee:
+    2.0% per annum on committed capital during investment period (3 years)
+    1.5% per annum on invested capital during harvest period
+    
+    Investor's management fee (INR 200 Cr × 2%): INR 4.0 Crore per annum
+    Quarterly billing: INR 1.0 Crore per quarter
+
+2.2 Performance Fee (Carried Interest):
+    20% of profits above the Hurdle Rate
+    Hurdle Rate (Preferred Return): 10% IRR per annum (compounded annually)
+    Catch-up: 100% catch-up to Manager once hurdle is cleared
+    High-water mark: Applies — no carry on previously distributed amounts
+
+    Illustrative Economics (assuming 18% gross IRR on INR 200 Cr, 5 years):
+    Gross Return                           : ~INR 490 Crore
+    Less: Management Fees (5 years)        : (INR 19.0 Crore)
+    Net Return before carry                : ~INR 471 Crore
+    Preferred Return to Investor (10% IRR) : ~INR 122 Crore (returned first)
+    Remaining Profit                       : ~INR 349 Crore
+    Manager Carry (20%)                    : ~INR  69.8 Crore
+    Net to Investor                        : ~INR 401.2 Crore
+    Net IRR to Investor                    : ~15.3%
+
+2.3 Other Fees:
+    Transaction fees (deal sourcing): 1% of deal value (shared 50:50 with Fund)
+    Monitoring fees: Charged to portfolio companies (100% to Fund)
+    Broken deal costs: To Fund (capped at INR 50 lakh per annum)
+
+================================================================================
+SECTION 3: INVESTMENT RESTRICTIONS & RISK PARAMETERS
+================================================================================
+3.1 Concentration Limits:
+    Single investment        : Max 15% of Fund corpus (INR 207 Crore)
+    Single sector            : Max 25% of Fund corpus (INR 345 Crore)
+    Single geography         : Max 60% of Fund corpus (not applicable — India only)
+    Listed securities        : Max 30% of invested capital
+
+3.2 Leverage Policy:
+    Fund-level leverage      : NOT PERMITTED (Category II AIF restriction)
+    Portfolio company leverage: Monitored — investments in companies with D/E >4x
+                               require Investment Committee approval and enhanced
+                               due diligence
+
+3.3 Environmental, Social & Governance (ESG) Policy:
+    The Fund shall not invest in: tobacco, weapons, gambling, coal mining.
+    All investments undergo ESG screening. Annual ESG report to be provided.
+
+3.4 Related Party Transactions:
+    Any co-investments alongside Manager affiliates require SEBI-mandated
+    LP Advisory Committee pre-approval.
+
+================================================================================
+SECTION 4: REPORTING & INVESTOR RIGHTS
+================================================================================
+4.1 Reporting Obligations:
+    Quarterly NAV statements       : Within 45 days of quarter-end
+    Annual audited financial report: Within 180 days of FY end (by Sep 30)
+    Portfolio company updates      : Quarterly (material events — immediately)
+    ESG report                     : Annually (within 6 months of FY end)
+    SEBI AIFMD reporting           : As per SEBI circular timelines
+
+4.2 Investor Advisory Committee (IAC):
+    Investor is entitled to one seat on the LP Advisory Committee.
+    IAC meets quarterly and has advisory (not voting) rights.
+    Matters requiring IAC consultation: LP transfers, key man events, conflicts.
+
+4.3 Key Man Clause:
+    If both Ms. Priya Kapoor (Managing Partner) and Mr. Suresh Nair (CFO) cease
+    to be actively involved in the Fund, a Key Man Event is triggered:
+    a) New investments are suspended for 180 days
+    b) LPs may vote (simple majority) to wind up the Fund
+    c) Replacement key persons must be approved by LP Advisory Committee
+
+4.4 Investor Rights:
+    GPLP Agreement clause 12: Investor may transfer its interest with
+    30-day ROFR offered to other LPs.
+
+================================================================================
+SECTION 5: RISK DISCLOSURES
+================================================================================
+IMPORTANT: The following risk factors are disclosed pursuant to SEBI AIF
+Regulations 2012 and must be read carefully by all investors:
+
+5.1 LIQUIDITY RISK: Fund investments are in unlisted/illiquid securities.
+    No secondary market exists for most investments. Investor should be
+    prepared to hold for the full Fund life (7+ years).
+
+5.2 LEVERAGE & DEBT RISK: While the Fund does not employ leverage, portfolio
+    companies may have significant debt. High leverage (D/E > 3x) in portfolio
+    companies increases risk of capital loss. Three current investments
+    (representing 22% of corpus) have leverage >3x.
+
+5.3 CONCENTRATION RISK: The Fund's real estate and infrastructure exposure
+    at 28% exceeds the 25% guideline. Manager is actively rebalancing.
+
+5.4 PERFORMANCE RISK: Past performance is not indicative of future results.
+    The Fund's current IRR (16.2%) is below the 20-25% target range.
+    Two stressed investments may result in partial capital impairment.
+
+5.5 REGULATORY RISK: SEBI, RBI, FEMA, and tax regulations are subject to
+    change and could adversely affect Fund operations and investor returns.
+
+5.6 CURRENCY RISK: Minimal (India-focused Fund). Any offshore investments
+    require RBI approval and create USD/INR exposure.
+
+================================================================================
+SECTION 6: EXECUTION & REPRESENTATIONS
+================================================================================
+Investor Representations:
+  ✓ Sophisticated Investor under SEBI AIF Regulations (net worth >INR 5 Crore)
+  ✓ Minimum investment of INR 1 Crore fulfilled
+  ✓ KYC/AML documentation submitted and verified
+  ✓ PMLA compliance confirmed
+  ✓ Board/trustee approval obtained for this commitment
+
+IN WITNESS WHEREOF:
+
+For Vertex Capital Management Pvt. Ltd.:
+  Name: Priya Kapoor | Designation: Managing Partner
+  Date: April 1, 2024 | SEBI IA License No.: INA000012345
+
+For Pinnacle Pension Trust:
+  Name: Harish Desai | Designation: Chief Investment Officer
+  Date: April 1, 2024 | Trustee License: IRDA/PT/00234
+
+[SEBI Filing: Submitted to SEBI AIFMD portal — Ref: AIFMD/2024/Q1/VC/007]
+[Stamp Duty: INR 500 (Karnataka Stamp Act) — e-stamped certificate enclosed]
+================================================================================

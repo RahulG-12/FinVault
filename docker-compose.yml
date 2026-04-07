@@ -1,0 +1,24 @@
+version: '3.9'
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./finvault.db:/app/finvault.db
+      - /tmp/finvault_docs:/tmp/finvault_docs
+    environment:
+      - DATABASE_URL=sqlite:///./finvault.db
+      - SECRET_KEY=change-this-in-production
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # Uncomment for production Qdrant:
+  # qdrant:
+  #   image: qdrant/qdrant
+  #   ports:
+  #     - "6333:6333"
+  #   volumes:
+  #     - qdrant_storage:/qdrant/storage
+
+# volumes:
+#   qdrant_storage:

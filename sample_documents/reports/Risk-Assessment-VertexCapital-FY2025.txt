@@ -1,0 +1,134 @@
+================================================================================
+VERTEX CAPITAL MANAGEMENT PVT. LTD.
+ENTERPRISE RISK ASSESSMENT REPORT — FY 2024-25
+Prepared by: Risk Management Department
+Reviewed by: Board Risk Committee
+Date: February 1, 2025
+CONFIDENTIAL — BOARD LEVEL DOCUMENT
+================================================================================
+
+1. RISK GOVERNANCE FRAMEWORK
+--------------------------------------------------------------------------------
+This report presents the Annual Enterprise Risk Assessment for Vertex Capital
+Management, a SEBI-registered Category II Alternative Investment Fund (AIF)
+with AUM of INR 4,200 Crore across 3 funds. The assessment follows the
+ISO 31000:2018 Risk Management framework and SEBI AIF Regulations 2012.
+
+Board Risk Committee Members:
+  - Chairperson: Mr. Aditya Mehta (Independent Director)
+  - Members: Ms. Priya Kapoor (MD), Mr. Suresh Nair (CFO), CA Rahul Shah
+
+2. PORTFOLIO RISK METRICS
+--------------------------------------------------------------------------------
+Fund                    AUM (Cr)   IRR Target  Current IRR   TVPI    Risk Rating
+----------------------  ---------  ----------  -----------   -----   -----------
+Vertex Growth Fund I     1,840      18-22%       19.4%        1.82x  MODERATE
+Vertex Debt Fund II        980      14-16%       13.8%        1.38x  LOW-MOD
+Vertex Opportunities III 1,380      20-25%       16.2%        1.14x  HIGH
+
+Vertex Opportunities III is underperforming target IRR by 380 bps primarily
+due to three stressed portfolio companies (see Section 4).
+
+3. MARKET & MACRO RISK ASSESSMENT
+--------------------------------------------------------------------------------
+3.1 INTEREST RATE RISK — RATING: HIGH
+  - 34% of debt fund portfolio (INR 333 Crore) in floating rate instruments
+  - RBI has signaled potential 25-50 bps rate cuts in H1 FY26 (favorable)
+  - Stress test (150 bps rate increase): NAV impact = -4.2% on Debt Fund II
+  - Hedging: Interest rate swaps covering INR 180 Crore (54% hedge ratio)
+  - Gap vs policy (75% hedge): INR 70 Crore unhedged exposure
+
+3.2 CREDIT RISK — RATING: MODERATE-HIGH
+  Overall Portfolio Credit Quality:
+    AAA/AA rated               : 38% of portfolio
+    A rated                    : 29% of portfolio
+    BBB / sub-investment grade : 22% of portfolio
+    Unrated (private equity)   : 11% of portfolio
+
+  Non-Performing Assets (NPAs):
+    Total NPA value           : INR 186 Crore (4.4% of AUM)
+    NPA Coverage Ratio        : 68% (provisioned INR 126 Crore)
+    New NPA additions Q3 FY25 : INR 42 Crore (2 new accounts)
+    Recovery from NPA (Q3)    : INR 18 Crore (CIRP resolution)
+
+  >>> HIGH RISK DEBT EXPOSURE <<<
+  Top 3 Stressed Borrowers:
+  a) Apex Infrastructure Ltd: Outstanding INR 68 Cr; D/E ratio 6.8x;
+     under RBI's SMA-2 category; DSCR < 1.0; probability of default: 45%
+  b) SunriseMart Retail: Outstanding INR 52 Cr; NCLT IBC proceedings
+     initiated; estimated haircut 35-50%; provision: INR 26 Cr (50%)
+  c) Horizon Telecom: Outstanding INR 66 Cr; recent credit downgrade from
+     BBB to BB-; liquidity crunch; covenant breach on interest coverage
+
+3.3 LIQUIDITY RISK — RATING: LOW
+  Available liquid assets     : INR 312 Crore
+  Unfunded commitments        : INR 124 Crore (next 6 months)
+  Liquidity coverage ratio    : 251% (comfortable)
+  Redemption requests (Q3)    : INR 48 Crore (met without distress)
+  Maximum 30-day drawdown risk: INR 165 Crore (within liquid buffer)
+
+3.4 CONCENTRATION RISK — RATING: MODERATE
+  Sector Concentration:
+    Real Estate & Infrastructure : 28% (limit: 25%) — LIMIT BREACH
+    Financial Services           : 22%
+    Consumer & Retail            : 18%
+    Technology                   : 16%
+    Healthcare                   : 10%
+    Others                       : 6%
+  
+  >>> ACTION REQUIRED: Real estate exposure at 28% vs limit of 25%.
+  No new real estate investments to be approved until rebalanced.
+
+3.5 REGULATORY & COMPLIANCE RISK — RATING: LOW
+  SEBI Compliance Status     : COMPLIANT
+  Pending SEBI Enquiries     : NIL
+  RBI Registered (NBFC-ND)  : COMPLIANT | Last inspection: Aug 2024
+  PMLA Compliance           : COMPLIANT | KYC refresh: 94% complete
+  Upcoming Regulation       : SEBI AIF circular on co-investment norms
+                              (effective June 1, 2025) — implementation in progress
+
+4. STRESSED PORTFOLIO COMPANIES — DEEP DIVE
+--------------------------------------------------------------------------------
+Company: Apex Infrastructure Ltd.
+  Loan Outstanding    : INR 68 Crore (Senior Secured)
+  Security Cover      : 1.6x (land + equipment) — declining
+  Debt-to-Equity      : 6.8x — critically high leverage
+  Interest Coverage   : 0.78x — unable to service interest from operations
+  Last Debt Service   : Partial (INR 3.2 Cr vs due INR 8.1 Cr, Q2 FY25)
+  Cash on hand        : INR 2.4 Crore — critically low
+  Management Action   : Exploring strategic sale of 2 road projects (value ~INR 45 Cr)
+  Vertex Action       : Classified NPA; provisioned INR 34 Cr (50%); legal
+                        team has initiated enforcement of security interest
+
+5. RISK LIMITS & BREACHES SUMMARY
+--------------------------------------------------------------------------------
+Risk Parameter                  Limit    Current   Status
+------------------------------  -------  --------  ---------
+Net Debt/EBITDA (portfolio avg) 3.5x     2.8x      WITHIN
+Single borrower exposure        5% AUM   1.6%      WITHIN
+Sector concentration            25%      28% RE    BREACH
+NPA ratio                       6%       4.4%      WITHIN
+FX unhedged exposure            15% AUM  8.2%      WITHIN
+Floating rate exposure          40%      34%       WITHIN
+Interest rate hedge ratio       75%      54%       BREACH
+
+6. RISK MITIGATION ACTION PLAN
+--------------------------------------------------------------------------------
+Action 1: Rebalance real estate sector to <25% — Target: March 31, 2025
+Action 2: Increase interest rate hedge to 75% — Target: February 28, 2025
+Action 3: Resolution of Apex Infrastructure — Target: June 30, 2025
+Action 4: Increase NPA provision for SunriseMart to 65% — Immediate
+Action 5: Conduct portfolio stress test (200 bps rate shock + 10% GDP decline)
+
+7. BOARD RESOLUTION (PROPOSED)
+--------------------------------------------------------------------------------
+The Board Risk Committee recommends:
+a) Approval of revised risk limits for H2 FY25
+b) Additional provision of INR 22 Crore for stressed assets
+c) Engagement of financial advisor for Apex Infrastructure resolution
+d) Quarterly risk reporting to be escalated to monthly for FY25
+
+Prepared by: Rohan Agarwal, CRO | Approved: Board Risk Committee
+Date: February 1, 2025
+Next Review: May 1, 2025
+================================================================================

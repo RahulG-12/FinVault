@@ -1,0 +1,107 @@
+================================================================================
+ACME CORPORATION INDIA PVT. LTD.
+QUARTERLY FINANCIAL REPORT — Q3 FY 2024-25
+(October 1, 2024 – December 31, 2024)
+CONFIDENTIAL — FOR INTERNAL USE AND AUTHORIZED STAKEHOLDERS ONLY
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Acme Corporation India delivered a mixed Q3 performance amid challenging
+macroeconomic conditions. Revenue grew 8.3% YoY but fell 4.1% sequentially.
+EBITDA margin compressed by 210 basis points due to rising input costs and
+increased debt servicing obligations. The company's leverage ratio has reached
+concerning levels, requiring immediate strategic attention.
+
+KEY FINANCIAL METRICS (Q3 FY25)
+--------------------------------------------------------------------------------
+                          Q3 FY25      Q3 FY24      Q2 FY25      Change YoY
+                          --------     --------     --------     ----------
+Revenue (INR Cr)           342.8        316.5        357.4        +8.3%
+Gross Profit (INR Cr)       98.6         96.2         104.8       +2.5%
+Gross Margin                28.8%        30.4%        29.3%       -160 bps
+EBITDA (INR Cr)             52.4         54.8         58.9        -4.4%
+EBITDA Margin               15.3%        17.3%        16.5%       -210 bps
+EBIT (INR Cr)               38.2         42.1         44.6        -9.3%
+Interest Expense (INR Cr)   31.8         18.4         29.2        +72.8%
+PAT (INR Cr)                 4.6         17.9          9.8        -74.3%
+PAT Margin                   1.3%         5.7%         2.7%       -440 bps
+EPS (INR)                    2.31         8.95         4.90        -74.2%
+
+BALANCE SHEET HIGHLIGHTS (As of December 31, 2024)
+--------------------------------------------------------------------------------
+Total Assets               : INR 1,842 Crore
+Total Debt                 : INR 986 Crore
+  - Short-term borrowings  : INR 412 Crore (41.8% of total debt)
+  - Long-term debt         : INR 574 Crore
+Total Equity               : INR 352 Crore
+Net Debt                   : INR 891 Crore (after cash of INR 95 Crore)
+
+DEBT & LEVERAGE ANALYSIS — HIGH RISK SECTION
+--------------------------------------------------------------------------------
+Debt-to-Equity Ratio       : 2.80x  [WARNING: Industry avg 1.4x — 2x above avg]
+Net Debt / EBITDA          : 4.26x  [CRITICAL: Covenant threshold = 4.0x]
+Interest Coverage Ratio    : 1.20x  [ALERT: Minimum safe level = 1.5x]
+Debt Service Coverage      : 0.94x  [BREACH: Below 1.0x = technical default risk]
+
+>>> RISK ASSESSMENT: HIGH LEVERAGE RISK <<<
+The company's Net Debt/EBITDA ratio of 4.26x has breached the covenant
+threshold of 4.0x stipulated in the INR 450 Crore term loan agreement with
+SBI Capital Markets (Agreement Ref: SBI/TL/ACME/2022/0034). Management has
+been notified and is in active discussions with the lender for a covenant waiver.
+Failure to obtain a waiver by March 31, 2025 could trigger a cross-default
+clause affecting an additional INR 320 Crore in bilateral credit facilities.
+
+CASH FLOW STATEMENT (Q3 FY25)
+--------------------------------------------------------------------------------
+Operating Cash Flow        : INR  42.6 Crore (down 38% YoY)
+Capital Expenditure        : INR  28.4 Crore
+Free Cash Flow             : INR  14.2 Crore (down 71% YoY)
+Debt Repayment             : INR  38.0 Crore
+Net Cash Movement          : INR (23.8) Crore (negative — cash burn quarter)
+
+SEGMENT PERFORMANCE
+--------------------------------------------------------------------------------
+Segment              Revenue (Cr)  EBITDA (Cr)  EBITDA Margin  YoY Growth
+-------------------  -----------  -----------  -------------  ----------
+B2B Enterprise          168.4        31.2         18.5%         +14.2%
+Consumer Products       112.6        16.8         14.9%          -2.1%
+Export Markets           61.8         8.4         13.6%         +22.4%
+Discontinued Ops          0.0       (4.0)           N/A            N/A
+
+RISK FACTORS & MANAGEMENT COMMENTARY
+--------------------------------------------------------------------------------
+1. INTEREST RATE RISK: 68% of debt is floating rate. RBI's hawkish stance
+   implies potential additional interest cost of INR 18-22 Crore in FY26
+   if rates increase another 50 bps.
+
+2. COVENANT BREACH RISK: As noted above, Net Debt/EBITDA at 4.26x vs
+   covenant of 4.0x. Management is pursuing: (a) asset divestiture of non-core
+   real estate assets worth ~INR 85 Crore, (b) equity raise of INR 120 Crore
+   via QIP in Q4 FY25, and (c) renegotiation of debt covenants.
+
+3. WORKING CAPITAL STRESS: Debtor days increased to 67 days (from 48 days in
+   Q3 FY24). Creditor days decreased to 38 days. Net working capital cycle
+   stretched by 25 days — tying up approximately INR 95 Crore in additional
+   working capital.
+
+4. FX RISK: Export revenues of INR 61.8 Crore exposed to USD/INR volatility.
+   Current hedge ratio: 45% (below company policy of 70%).
+
+OUTLOOK & GUIDANCE (Q4 FY25)
+--------------------------------------------------------------------------------
+Revenue Guidance           : INR 355–375 Crore (recovery expected)
+EBITDA Guidance            : INR 58–64 Crore (margin improvement on cost cuts)
+Key Monitorables:
+  - Covenant waiver from SBI Capital by January 31, 2025
+  - Completion of INR 85 Crore asset sale by February 2025
+  - QIP launch: Target March 2025
+
+AUDITOR'S NOTE
+--------------------------------------------------------------------------------
+The above financial data has been reviewed by M/s Deloitte Haskins & Sells LLP.
+Full statutory audit for FY2024-25 is pending completion.
+
+Prepared by: Ananya Krishnaswamy, CFO | Reviewed: Board Finance Committee
+Date: January 15, 2025 | Classification: RESTRICTED
+================================================================================

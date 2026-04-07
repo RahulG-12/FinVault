@@ -1,0 +1,80 @@
+INVOICE
+================================================================================
+Invoice Number  : INV-2047
+Invoice Date    : March 15, 2024
+Due Date        : April 14, 2024
+Payment Terms   : Net 30
+
+FROM (Vendor):
+  GlobalTech Solutions Pvt. Ltd.
+  Suite 800, Towers West, Bandra Kurla Complex
+  Mumbai, Maharashtra 400051
+  GSTIN: 27AABCG1234F1ZK
+  PAN  : AABCG1234F
+
+TO (Bill To):
+  Acme Corporation India Pvt. Ltd.
+  14th Floor, DLF Cyber City, Phase 2
+  Gurugram, Haryana 122002
+  GSTIN: 06AABCA5678M1ZT
+  PAN  : AABCA5678M
+
+================================================================================
+SERVICES RENDERED
+================================================================================
+Item  Description                           HSN/SAC  Qty   Rate (INR)  Amount (INR)
+----  -------------------------------------  -------  ----  ----------  ------------
+1     Enterprise Cloud Infrastructure        998313   1     850,000.00    850,000.00
+      (Annual Subscription - AWS Managed)
+2     Cybersecurity Monitoring Service       998312   12    42,500.00     510,000.00
+      (Monthly Retainer × 12 months)
+3     Data Analytics Platform License        998315   5     65,000.00     325,000.00
+      (Per-seat annual license)
+4     Professional Implementation Services   998314   120   3,500.00      420,000.00
+      (Consulting hours @ ₹3,500/hr)
+5     24x7 Technical Support Package         998316   1     95,000.00      95,000.00
+      (Premium SLA - Annual)
+
+================================================================================
+SUMMARY
+================================================================================
+Subtotal                                                     INR  2,200,000.00
+GST @ 18% (IGST - Inter-state supply)                       INR    396,000.00
+--------------------------------------------------------------------
+TOTAL AMOUNT DUE                                             INR  2,596,000.00
+Amount in Words: Rupees Twenty-Five Lakhs Ninety-Six Thousand Only
+
+================================================================================
+FINANCIAL NOTES & RISK INDICATORS
+================================================================================
+- Payment overdue by more than 30 days will attract interest at 18% per annum.
+- Acme Corporation's current outstanding balance (prior invoices): INR 1,840,000
+- Combined exposure (including this invoice): INR 4,436,000
+- Credit limit assigned to Acme Corp: INR 5,000,000
+- Available credit headroom: INR 564,000 (11.3% of limit)
+- Customer credit rating: B+ (moderate risk)
+- Last payment received: February 3, 2024 (INR 920,000)
+- Days Sales Outstanding (DSO) for this account: 47 days (industry avg: 32 days)
+- Recommended action: Flag for collections review if payment not received by Apr 21
+
+================================================================================
+BANK DETAILS FOR PAYMENT
+================================================================================
+Account Name   : GlobalTech Solutions Pvt. Ltd.
+Bank           : HDFC Bank Ltd.
+Account Number : 5020 0123 4567 89
+IFSC Code      : HDFC0001234
+Branch         : Bandra Kurla Complex, Mumbai
+SWIFT Code     : HDFCINBB (for international wire transfers)
+
+================================================================================
+TERMS & CONDITIONS
+================================================================================
+1. This invoice is subject to the Master Services Agreement dated January 1, 2024.
+2. Disputes must be raised within 7 days of invoice receipt.
+3. Partial payments will be applied to the oldest outstanding balance first.
+4. GlobalTech Solutions reserves the right to suspend services upon payment default.
+5. All disputes subject to jurisdiction of Mumbai courts.
+
+Authorised Signatory: Rajesh Kumar, CFO, GlobalTech Solutions Pvt. Ltd.
+Digital Signature Verified: YES | Invoice Generated: 2024-03-15T09:30:00+05:30

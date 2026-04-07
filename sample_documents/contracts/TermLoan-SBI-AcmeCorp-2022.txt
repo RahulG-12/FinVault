@@ -1,0 +1,159 @@
+================================================================================
+TERM LOAN AGREEMENT
+================================================================================
+Agreement Reference : TL/SBI/ACME/2022/0034
+Loan Amount         : INR 45,00,00,000 (INR 45 Crore)
+Sanction Date       : September 15, 2022
+First Disbursement  : October 1, 2022
+Final Maturity Date : September 30, 2027 (5-year tenor)
+
+LENDER:
+  State Bank of India, Corporate Banking Branch
+  SBI Building, Nariman Point, Mumbai 400021
+  IFSC: SBIN0000001 | SWIFT: SBININBB002
+
+BORROWER:
+  Acme Corporation India Pvt. Ltd.
+  14th Floor, DLF Cyber City, Gurugram 122002
+  CIN: U74999HR2012PTC048721
+
+================================================================================
+SECTION 1: LOAN TERMS & CONDITIONS
+================================================================================
+1.1 Purpose of Loan:
+    This term loan is sanctioned exclusively for:
+    a) Capital expenditure for manufacturing expansion (Plant 3, Pune): INR 28 Crore
+    b) Technology infrastructure upgrade (ERP + Data Center): INR 12 Crore
+    c) Working capital augmentation (balance): INR 5 Crore
+
+    Any utilization for purposes other than stated above constitutes an
+    Event of Default.
+
+1.2 Interest Rate:
+    Base Rate    : SBI MCLR (1-year) — currently 8.85% p.a.
+    Spread       : 175 basis points (1.75%)
+    Effective Rate: 10.60% p.a. (floating — resets annually on April 1)
+    Interest Type : Floating rate — reset annually on MCLR review dates
+
+1.3 Repayment Schedule (Principal):
+    Repayment starts: April 1, 2024 (18-month moratorium from first disbursal)
+    
+    Period              Installment   Principal Balance (Approx.)
+    ------------------  -----------   --------------------------
+    Apr 2024 – Mar 2025 INR 7.5 Cr/yr INR 37.5 Crore
+    Apr 2025 – Mar 2026 INR 9.0 Cr/yr INR 28.5 Crore
+    Apr 2026 – Mar 2027 INR 10.5 Cr/yr INR 18.0 Crore
+    Apr 2027 – Sep 2027 INR 18.0 Cr    NIL (Final Bullet)
+
+    Interest Payment : Monthly (1st of each month)
+    Principal Payment: Quarterly (1st of April, July, October, January)
+
+================================================================================
+SECTION 2: SECURITY & COLLATERAL
+================================================================================
+2.1 Primary Security:
+    a) First pari passu charge on all movable fixed assets of the Borrower
+       (existing and future, including Plant 3 under construction in Pune)
+       Estimated current value: INR 82 Crore | Security cover: 1.82x
+
+    b) First pari passu charge on all current assets (receivables, inventory)
+       Current book value: INR 124 Crore (with 25% haircut = INR 93 Crore)
+
+2.2 Collateral Security:
+    c) Equitable mortgage of commercial property:
+       Shop No. 401-404, Raheja Towers, Nariman Point, Mumbai
+       Market Value: INR 34 Crore | Registered with SRO Mumbai-I
+       Loan-to-Value (LTV): 132% (of loan outstanding as of Mar 2024)
+
+    d) Personal Guarantee of Mr. Vikrant Mehta, Managing Director
+       (Net worth certificate: INR 28 Crore — verified)
+
+2.3 Security Coverage Monitoring:
+    Security Cover (as of December 2024): 1.48x (declining from 1.82x at sanction)
+    Minimum required security cover: 1.25x
+    Current headroom to breach: 0.23x — MONITORING CLOSELY
+
+================================================================================
+SECTION 3: FINANCIAL COVENANTS (CRITICAL)
+================================================================================
+The Borrower shall maintain the following financial covenants at all times,
+tested quarterly on the basis of audited/reviewed financial statements:
+
+Covenant                        Requirement    Q3 FY25 Actual   Status
+-----------------------------   -----------    --------------   --------
+Debt Service Coverage Ratio     ≥ 1.20x        0.94x            BREACH
+Net Debt / EBITDA               ≤ 4.00x        4.26x            BREACH
+Interest Coverage Ratio         ≥ 1.50x        1.20x            BREACH
+Current Ratio                   ≥ 1.10x        1.28x            OK
+Debt-to-Equity Ratio            ≤ 3.00x        2.80x            OK (near limit)
+Minimum Net Worth               ≥ INR 200 Cr   INR 352 Cr       OK
+
+>>> COVENANT BREACH NOTICE <<<
+DSCR, Net Debt/EBITDA, and ICR covenants are in breach as of Q3 FY25.
+SBI has issued Covenant Breach Notice No. SBI/CB/ACME/2025/001 dated
+January 10, 2025. Borrower has 45 days (until February 24, 2025) to:
+  (a) Cure the breach OR
+  (b) Obtain a formal waiver from the Lender's Credit Committee OR
+  (c) Provide additional security to the satisfaction of the Lender
+
+Failure to cure may trigger cross-default provisions (see Section 4.3).
+
+================================================================================
+SECTION 4: EVENTS OF DEFAULT
+================================================================================
+4.1 Payment Default: Failure to pay any amount within 5 business days of due date.
+4.2 Covenant Breach: Failure to maintain financial covenants (uncured within 45 days).
+4.3 Cross-Default: Default under any other loan/financial instrument >INR 5 Crore.
+4.4 Material Adverse Change: Any event materially adversely affecting Borrower's
+    ability to repay (including credit rating downgrade below BB).
+4.5 Change in Control: Any change in majority ownership without prior approval.
+4.6 Misrepresentation: Any material misrepresentation in financial disclosures.
+4.7 Insolvency: Filing under IBC 2016 or appointment of liquidator/receiver.
+
+================================================================================
+SECTION 5: CONSEQUENCES OF DEFAULT
+================================================================================
+5.1 Upon Event of Default, Lender may at its discretion:
+    a) Declare the entire outstanding loan immediately due and payable
+    b) Invoke personal guarantee of MD
+    c) Enforce charge/mortgage on security assets
+    d) Initiate SARFAESI proceedings (Securitisation Act 2002)
+    e) File before Debt Recovery Tribunal (DRT) or approach NCLT under IBC
+
+5.2 Penal Interest: Additional 2% p.a. on defaulted amounts.
+
+5.3 Right of Set-Off: Lender may set off any amounts in Borrower's accounts
+    maintained with SBI against outstanding loan dues.
+
+================================================================================
+SECTION 6: REPORTING & INFORMATION COVENANTS
+================================================================================
+Borrower shall provide to Lender:
+- Quarterly financial statements within 45 days of quarter-end
+- Annual audited financials within 120 days of financial year-end
+- Monthly stock/debtor statements by the 10th of following month
+- Immediate notification of any covenant breach, litigation, or material event
+- Annual property valuation reports for mortgaged property
+
+================================================================================
+LOAN STATUS AS OF JANUARY 2025
+================================================================================
+Original Loan Amount       : INR 45.00 Crore
+Cumulative Principal Repaid: INR  7.50 Crore (Apr–Dec 2024)
+Current Outstanding        : INR 37.50 Crore
+Accrued Interest (overdue) : INR  0.00 Crore (all interest paid to date)
+Next Principal Due         : INR  1.875 Crore (January 1, 2025)
+Next Interest Due          : INR  0.33 Crore (February 1, 2025)
+Loan Classification        : STANDARD (SMA-0 watch due to covenant breach)
+
+================================================================================
+Signed for State Bank of India:
+  Authorized Signatory: Ramesh Gupta, Senior Vice President, Corporate Banking
+  Date: September 15, 2022
+
+Signed for Acme Corporation India Pvt. Ltd.:
+  Authorized Signatory: Ananya Krishnaswamy, CFO
+  Date: September 15, 2022
+
+[Loan Agreement registered with CERSAI — Registration No: 2022/MH/00345678]
+================================================================================
