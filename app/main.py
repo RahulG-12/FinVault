@@ -5,7 +5,7 @@ from app.core.database import engine, Base
 from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 origins = [
-    "https://fin-vault-smoky.vercel.app",  # your frontend
+    "https://finvault-drab.vercel.app/",  # your frontend
     "http://localhost:3000",
     "http://127.0.0.1:3000",
 ]
