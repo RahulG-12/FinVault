@@ -3,10 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes import auth, documents, roles, users, rag
 from app.core.database import engine, Base
 
-# ❌ Remove these lines (app doesn't exist yet, and 'app.' prefix is missing)
-# origins = [...]
-# add_middleware(...)
-
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
@@ -17,9 +13,9 @@ app = FastAPI(
     redoc_url="/api/redoc"
 )
 
-app.add_middleware(          # ✅ This one is correct — keep it
+app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://finvault-drab.vercel.app"],  # use your specific origin
+    allow_origins=["https://finvault-drab.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
