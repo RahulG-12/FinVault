@@ -4,7 +4,11 @@ from app.api.routes import auth, documents, roles, users, rag
 from app.core.database import engine, Base
 from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
-
+origins = [
+    "https://fin-vault-smoky.vercel.app",  # your frontend
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # or ["https://fin-vault-smoky.vercel.app"]
