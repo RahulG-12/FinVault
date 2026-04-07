@@ -2,21 +2,17 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes import auth, documents, roles, users, rag
 from app.core.database import engine, Base
-from fastapi.middleware.cors import CORSMiddleware
-app = FastAPI()
 origins = [
-    "https://finvault-drab.vercel.app",  # your frontend
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
+    "https://finvault-drab.vercel.app",
 ]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # or ["https://fin-vault-smoky.vercel.app"]
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
