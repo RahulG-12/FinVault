@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes import auth, documents, roles, users, rag
 from app.core.database import engine, Base
 from fastapi.middleware.cors import CORSMiddleware
+app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
