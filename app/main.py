@@ -15,7 +15,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://finvault-drab.vercel.app"],
+    allow_origins=["https://finvault-drab.vercel.app", "https://fin-vault-woad.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
