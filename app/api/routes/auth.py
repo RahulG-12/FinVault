@@ -26,8 +26,22 @@ def register(data: UserRegister, db: Session = Depends(get_db)):
 
 @router.post("/login", response_model=TokenResponse)
 def login(data: UserLogin, db: Session = Depends(get_db)):
+    # 1. Look up the user
     user = db.query(User).filter(User.username == data.username).first()
+    
+    # 2. Check if user exists and password is correct
     if not user or not verify_password(data.password, user.hashed_password):
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid credentials")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, 
+            detail="Invalid credentials"
+        )
+    
+    # 3. Create the token (This line is now guaranteed to run if check above passes)
     token = create_access_token({"sub": str(user.id)})
-    return TokenResponse(access_token=token, user_id=user.id, username=user.username)
+    
+    # 4. Return the response using the initialized 'token'
+    return TokenResponse(
+        access_token=token, 
+        user_id=user.id, 
+        username=user.username
+    )
