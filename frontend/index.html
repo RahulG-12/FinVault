@@ -293,9 +293,7 @@
   .rag-hero-label{font-size:11px;color:rgba(255,255,255,.35);letter-spacing:.8px;text-transform:uppercase;margin-bottom:12px}
   .rag-hero-title{font-size:26px;font-weight:600;color:#fff;font-family:'DM Serif Display',serif;margin-bottom:6px;letter-spacing:-.3px}
   .rag-hero-sub{font-size:14px;color:rgba(255,255,255,.45);margin-bottom:28px}
-  .rag-search-box{
-    display:flex;gap:10px;position:relative;z-index:1;
-  }
+  .rag-search-box{display:flex;gap:10px;position:relative;z-index:1}
   .rag-input{
     flex:1;padding:14px 18px;
     background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);
@@ -339,19 +337,6 @@
   .rag-result-title{font-size:14px;font-weight:600;color:var(--ink)}
   .rag-result-meta{display:flex;gap:8px;align-items:center;margin-top:4px;flex-wrap:wrap}
   .rag-result-text{font-size:13.5px;color:var(--ink2);line-height:1.65;border-left:3px solid var(--border2);padding-left:14px}
-  .score-ring{
-    width:44px;height:44px;border-radius:50%;flex-shrink:0;
-    display:flex;align-items:center;justify-content:center;
-    font-size:12px;font-weight:700;
-    background:conic-gradient(var(--emerald) var(--pct),var(--surface3) 0);
-    position:relative;
-  }
-  .score-ring::after{
-    content:attr(data-score);position:absolute;
-    width:34px;height:34px;border-radius:50%;background:var(--surface);
-    display:flex;align-items:center;justify-content:center;
-    font-size:11px;font-weight:600;color:var(--emerald);
-  }
   .no-results{text-align:center;padding:60px 20px;color:var(--muted)}
   .no-results-icon{font-size:40px;margin-bottom:12px}
 
@@ -542,9 +527,7 @@
       </div>
       <div class="two-col">
         <div class="card">
-          <div class="section-header">
-            <div class="section-title">Recent Activity</div>
-          </div>
+          <div class="section-header"><div class="section-title">Recent Activity</div></div>
           <div id="activity-feed">
             <div class="activity-item">
               <div class="activity-dot upload">↑</div>
@@ -624,39 +607,19 @@
           <div class="rag-filter-chip" onclick="setRagFilter(this,'contract')">Contracts</div>
         </div>
       </div>
-
       <div class="pipeline-strip">
-        <div class="pipeline-step">
-          <div class="pipeline-step-icon" id="pl-1">✏️</div>
-          <div class="pipeline-step-text">Query</div>
-        </div>
+        <div class="pipeline-step"><div class="pipeline-step-icon" id="pl-1">✏️</div><div class="pipeline-step-text">Query</div></div>
         <div class="pipeline-arrow">→</div>
-        <div class="pipeline-step">
-          <div class="pipeline-step-icon" id="pl-2">⚙️</div>
-          <div class="pipeline-step-text">Embedding</div>
-        </div>
+        <div class="pipeline-step"><div class="pipeline-step-icon" id="pl-2">⚙️</div><div class="pipeline-step-text">Embedding</div></div>
         <div class="pipeline-arrow">→</div>
-        <div class="pipeline-step">
-          <div class="pipeline-step-icon" id="pl-3">🗄️</div>
-          <div class="pipeline-step-text">Vector Search</div>
-        </div>
+        <div class="pipeline-step"><div class="pipeline-step-icon" id="pl-3">🗄️</div><div class="pipeline-step-text">Vector Search</div></div>
         <div class="pipeline-arrow">→</div>
-        <div class="pipeline-step">
-          <div class="pipeline-step-icon" id="pl-4">📊</div>
-          <div class="pipeline-step-text">Top 20 Results</div>
-        </div>
+        <div class="pipeline-step"><div class="pipeline-step-icon" id="pl-4">📊</div><div class="pipeline-step-text">Top 20 Results</div></div>
         <div class="pipeline-arrow">→</div>
-        <div class="pipeline-step">
-          <div class="pipeline-step-icon" id="pl-5">🏆</div>
-          <div class="pipeline-step-text">Reranking</div>
-        </div>
+        <div class="pipeline-step"><div class="pipeline-step-icon" id="pl-5">🏆</div><div class="pipeline-step-text">Reranking</div></div>
         <div class="pipeline-arrow">→</div>
-        <div class="pipeline-step">
-          <div class="pipeline-step-icon" id="pl-6">✅</div>
-          <div class="pipeline-step-text">Top 5 Results</div>
-        </div>
+        <div class="pipeline-step"><div class="pipeline-step-icon" id="pl-6">✅</div><div class="pipeline-step-text">Top 5 Results</div></div>
       </div>
-
       <div id="rag-results-section">
         <div class="no-results">
           <div class="no-results-icon">⟡</div>
@@ -716,7 +679,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Sample Documents -->
     <div class="page" id="page-samples">
       <div style="background:linear-gradient(135deg,#0a0f1e 0%,#1a2e5a 100%);border-radius:16px;padding:28px 32px;margin-bottom:24px;position:relative;overflow:hidden">
@@ -732,7 +695,7 @@
 
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px">
         <!-- Invoices -->
-        <div style="grid-column:span 1">
+        <div>
           <div style="font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px;display:flex;align-items:center;gap:6px"><span style="width:10px;height:10px;border-radius:50%;background:#7c3aed;display:inline-block"></span>3 Invoices</div>
           <div style="display:flex;flex-direction:column;gap:10px">
             <div class="card" style="padding:14px 16px">
@@ -752,10 +715,6 @@
             </div>
           </div>
         </div>
-
-  </div><!-- /main -->
-</div><!-- /app -->
-
 
         <!-- Reports -->
         <div>
@@ -814,7 +773,10 @@
           <button onclick="tryQuery('personal guarantee security collateral enforcement')" style="padding:10px 14px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;text-align:left;font-size:12.5px;color:var(--ink2);cursor:pointer;font-family:inherit;transition:all .15s" onmouseover="this.style.background='var(--surface3)'" onmouseout="this.style.background='var(--surface2)'">💬 "personal guarantee security collateral enforcement"</button>
         </div>
       </div>
-    </div>
+    </div><!-- /page-samples -->
+
+  </div><!-- /main -->
+</div><!-- /app -->
 
 <!-- Upload Modal -->
 <div class="modal-overlay" id="upload-modal">
@@ -872,7 +834,6 @@ let ragTypeFilter = '';
 let uploadedFile = null;
 let activity = [];
 
-// ─── Helpers ────────────────────────────────
 function headers(extra={}) {
   return {'Content-Type':'application/json','Authorization':'Bearer '+token,...extra};
 }
@@ -903,17 +864,16 @@ function timeAgo(d) {
   return Math.floor(s/3600)+'h ago';
 }
 function renderActivity() {
-  const icons = {upload:'↑ upload',search:'⌕ search',delete:'✕ delete',index:'⚡ index'};
+  const icons = {upload:'↑',search:'⌕',delete:'✕',index:'⚡'};
   const classes = {upload:'upload',search:'search',delete:'delete',index:'index'};
   if(!activity.length) return;
   document.getElementById('activity-feed').innerHTML = activity.map(a=>`
     <div class="activity-item">
-      <div class="activity-dot ${classes[a.type]||'upload'}">${icons[a.type]?.split(' ')[0]||'•'}</div>
+      <div class="activity-dot ${classes[a.type]||'upload'}">${icons[a.type]||'•'}</div>
       <div><div class="activity-text">${a.text}</div><div class="activity-time">${timeAgo(a.time)}</div></div>
     </div>`).join('');
 }
 
-// ─── Auth ────────────────────────────────────
 function switchAuthTab(tab) {
   document.querySelectorAll('.auth-tab').forEach((t,i)=>t.classList.toggle('active', (i===0&&tab==='login')||(i===1&&tab==='register')));
   document.getElementById('login-form').style.display = tab==='login'?'block':'none';
@@ -961,7 +921,6 @@ function logout() {
   document.getElementById('auth-screen').style.display='flex';
 }
 
-// ─── App Init ────────────────────────────────
 function initApp() {
   document.getElementById('auth-screen').style.display='none';
   document.getElementById('app').classList.add('visible');
@@ -994,7 +953,6 @@ function updateStats() {
   document.getElementById('con-bar').style.width = (conC/total*100)+'%';
 }
 
-// ─── Navigation ──────────────────────────────
 const navMeta = {
   dashboard:{title:'Dashboard',sub:'Overview of your financial document vault',actions:''},
   documents:{title:'Document Vault',sub:'Manage all financial documents',actions:'<button class="btn btn-gold" onclick="openUpload()">↑ Upload Document</button>'},
@@ -1016,10 +974,8 @@ function nav(page) {
   if(page==='documents') renderDocs();
   if(page==='roles') renderRoles();
   if(page==='users') renderUsers();
-  if(page==='samples') { /* static page, no load needed */ }
 }
 
-// ─── Documents ───────────────────────────────
 function typeBadge(t) {
   const cls = {invoice:'badge-invoice',report:'badge-report',contract:'badge-contract'}[t]||'';
   return `<span class="badge ${cls}">${t}</span>`;
@@ -1081,7 +1037,6 @@ async function indexDoc(id) {
   } catch(e) { toast(e.message,'error'); }
 }
 
-// ─── Upload ──────────────────────────────────
 function openUpload() { document.getElementById('upload-modal').classList.add('open'); }
 function closeUpload() { document.getElementById('upload-modal').classList.remove('open'); uploadedFile=null; document.getElementById('file-selected').textContent=''; }
 function handleFile(f) {
@@ -1108,13 +1063,11 @@ async function uploadDoc() {
     renderDocs(); updateStats(); closeUpload();
     toast('Document uploaded successfully!','success');
     addActivity('upload',`"${doc.title}" uploaded by ${currentUser.username}`);
-    // Auto-index
     setTimeout(()=>indexDoc(doc.document_id),500);
   } catch(e) { toast(e.message,'error'); }
   document.getElementById('upload-btn').textContent='Upload Document';
 }
 
-// ─── RAG ─────────────────────────────────────
 function setRagFilter(el, val) {
   document.querySelectorAll('.rag-filter-chip').forEach(c=>c.classList.remove('active'));
   el.classList.add('active');
@@ -1124,12 +1077,7 @@ async function doRAGSearch() {
   const q = document.getElementById('rag-query').value.trim();
   if(!q) return toast('Enter a search query','error');
   document.getElementById('rag-search-btn').innerHTML='<span class="loading-spinner"></span>';
-  // Animate pipeline
-  for(let i=1;i<=6;i++) {
-    setTimeout(()=>{
-      document.getElementById('pl-'+i)?.classList.add('active');
-    }, i*150);
-  }
+  for(let i=1;i<=6;i++) setTimeout(()=>document.getElementById('pl-'+i)?.classList.add('active'), i*150);
   setTimeout(()=>document.querySelectorAll('.pipeline-step-icon').forEach(e=>e.classList.remove('active')),1200);
   try {
     const body = {query:q, top_k:5};
@@ -1164,9 +1112,7 @@ function renderRAGResults(data) {
             </div>
           </div>
           <div style="text-align:center;flex-shrink:0">
-            <div style="font-size:18px;font-weight:700;color:${pct>70?'var(--emerald)':pct>40?'var(--amber)':'var(--muted)'}">
-              ${pct}%
-            </div>
+            <div style="font-size:18px;font-weight:700;color:${pct>70?'var(--emerald)':pct>40?'var(--amber)':'var(--muted)'}">${pct}%</div>
             <div style="font-size:10px;color:var(--faint);text-transform:uppercase;letter-spacing:.5px">score</div>
           </div>
         </div>
@@ -1175,7 +1121,6 @@ function renderRAGResults(data) {
     }).join('')}</div>`;
 }
 
-// ─── Roles ───────────────────────────────────
 async function seedRoles() {
   try {
     const r = await api('POST','/roles/seed-defaults');
@@ -1203,20 +1148,16 @@ function renderRoles() {
         <span style="font-size:12px;color:var(--faint)">Loading permissions…</span>
       </div>
     </div>`).join('');
-  // Load permissions for each role
   allRoles.forEach(async r=>{
-    try {
-      // We'll infer from the seeded defaults
-      const defaultPerms = {
-        'Admin':['documents:read','documents:write','documents:delete','users:manage','roles:manage','rag:search','rag:index'],
-        'Financial Analyst':['documents:read','documents:write','rag:search','rag:index'],
-        'Auditor':['documents:read','rag:search'],
-        'Client':['documents:read'],
-      };
-      const perms = defaultPerms[r.name]||[];
-      const el = document.getElementById('perms-'+r.id);
-      if(el) el.innerHTML = perms.map(p=>`<span class="perm-chip ${permColor(p)}">${p}</span>`).join('');
-    } catch(e){}
+    const defaultPerms = {
+      'Admin':['documents:read','documents:write','documents:delete','users:manage','roles:manage','rag:search','rag:index'],
+      'Financial Analyst':['documents:read','documents:write','rag:search','rag:index'],
+      'Auditor':['documents:read','rag:search'],
+      'Client':['documents:read'],
+    };
+    const perms = defaultPerms[r.name]||[];
+    const el = document.getElementById('perms-'+r.id);
+    if(el) el.innerHTML = perms.map(p=>`<span class="perm-chip ${permColor(p)}">${p}</span>`).join('');
   });
 }
 async function createRole() {
@@ -1235,7 +1176,6 @@ async function createRole() {
   } catch(e) { toast(e.message,'error'); }
 }
 
-// ─── Users ───────────────────────────────────
 function avatarColor(name) {
   const colors = ['#1a4fa8','#0d7a5f','#c9952a','#7c3aed','#a8182a'];
   return colors[(name.charCodeAt(0)||0)%colors.length];
@@ -1256,12 +1196,10 @@ function renderUsers() {
       <td><span class="badge ${u.is_active?'badge-indexed':'badge-failed'}">${u.is_active?'Active':'Inactive'}</span></td>
       <td><button class="btn btn-xs btn-outline" onclick="viewUserPerms(${u.id},'${u.username}')">View Perms</button></td>
     </tr>`).join('');
-  // Populate assign dropdowns
   const userSel = document.getElementById('assign-user-id');
   const roleSel = document.getElementById('assign-role-id');
   if(userSel) userSel.innerHTML = allUsers.map(u=>`<option value="${u.id}">${u.username}</option>`).join('');
   if(roleSel) roleSel.innerHTML = allRoles.map(r=>`<option value="${r.id}">${r.name}</option>`).join('');
-  // Load user roles
   allUsers.forEach(async u=>{
     try {
       const data = await api('GET',`/users/${u.id}/roles`);
@@ -1290,17 +1228,16 @@ async function assignRole() {
   } catch(e) { toast(e.message,'error'); }
 }
 
-// ─── Sample Documents ────────────────────────
 const SAMPLE_DOCS = [
-  { filename:'INV-2047-AcmeCorp.txt',      title:'Invoice #INV-2047 — GlobalTech to Acme Corp',              company:'Acme Corporation India',     type:'invoice',  content:`INVOICE\n================================================================================\nInvoice Number  : INV-2047\nInvoice Date    : March 15, 2024\nDue Date        : April 14, 2024\nPayment Terms   : Net 30\n\nFROM (Vendor): GlobalTech Solutions Pvt. Ltd., Suite 800, Towers West, Bandra Kurla Complex, Mumbai 400051\nGSTIN: 27AABCG1234F1ZK | PAN: AABCG1234F\n\nTO (Bill To): Acme Corporation India Pvt. Ltd., 14th Floor, DLF Cyber City, Gurugram 122002\nGSTIN: 06AABCA5678M1ZT | PAN: AABCA5678M\n\nSERVICES RENDERED:\n1. Enterprise Cloud Infrastructure (Annual Subscription - AWS Managed)  INR 850,000\n2. Cybersecurity Monitoring Service (Monthly Retainer x12)              INR 510,000\n3. Data Analytics Platform License (5 seats annual)                     INR 325,000\n4. Professional Implementation Services (120 hrs @ 3,500)               INR 420,000\n5. 24x7 Technical Support Package (Premium SLA Annual)                  INR  95,000\n\nSubtotal: INR 2,200,000 | GST 18%: INR 396,000 | TOTAL: INR 2,596,000\n\nFINANCIAL RISK NOTES:\n- Acme Corporation outstanding balance (prior invoices): INR 1,840,000\n- Combined exposure: INR 4,436,000\n- Credit limit: INR 5,000,000 | Available headroom: INR 564,000 (11.3%)\n- Customer credit rating: B+ (moderate risk)\n- Days Sales Outstanding (DSO) for this account: 47 days (industry avg 32)\n- Late payment attracts interest at 18% per annum\n- Recommended: Flag for collections review if not received by Apr 21, 2024\n\nBANK: HDFC Bank | IFSC: HDFC0001234 | Acct: 50200123456789\nAuthorised: Rajesh Kumar, CFO, GlobalTech Solutions Pvt. Ltd.` },
-  { filename:'INV-3312-VertexCapital.txt', title:'Invoice #INV-3312 — NovaSys to Vertex Capital',            company:'Vertex Capital Management',   type:'invoice',  content:`INVOICE\n================================================================================\nInvoice Number: INV-3312 | Date: March 28, 2024 | Due: April 27, 2024\nFROM: NovaSys Financial Technology Ltd., WeWork Galaxy, 43 Residency Road, Bengaluru 560025\nTO: Vertex Capital Management Pvt. Ltd., Unit 1201, One BKC Tower, Mumbai 400051\n\nSERVICES:\n1. Algorithmic Trading Platform (White-label Q1 2024)       INR 1,250,000\n2. Real-time Market Data Feed (Bloomberg, NSE, BSE)         INR   540,000\n3. Risk Management Engine (VaR & Stress Testing Suite)      INR   475,000\n4. Regulatory Compliance Reporting (SEBI, RBI automated)    INR   320,000\n5. Portfolio Analytics Dashboard (8 seats)                  INR   440,000\n6. API Integration & Custom Dev (85 hrs @ 4,800)            INR   408,000\n7. Data Migration & Onboarding (one-time)                   INR   185,000\n\nSubtotal: INR 3,618,000 | IGST 18%: INR 651,240 | TOTAL: INR 4,269,240\n\nCLIENT FINANCIAL RISK ASSESSMENT:\n- AUM: INR 4,200 Crore | Revenue FY23-24: INR 38.5 Crore\n- Current Ratio: 1.82 (Adequate) | Debt-to-Equity Ratio: 0.43x (LOW RISK)\n- Payment History Score: 96/100 (Excellent) | Zero delinquencies in 14 invoices\n- Average Payment Speed: 18 days (ahead of Net 30)\n- Credit Limit: INR 10,000,000 | Risk Classification: LOW — GREEN\nAuthorised: Priya Nair, Head of Finance, NovaSys Financial Technology Ltd.` },
-  { filename:'INV-0891-MeridianAdvisors.txt', title:'Invoice #INV-0891 — PrimeAudit to Meridian (OVERDUE)',  company:'Meridian Financial Advisors', type:'invoice',  content:`INVOICE — COLLECTIONS ESCALATION\n================================================================================\nInvoice Number: INV-0891 | Date: April 1, 2024 | OVERDUE ACCOUNT FLAG\nFROM: PrimeAudit & Associates LLP, Plot 45, Sector 32, Gurugram 122001 | ICAI: 001987N\nTO: Meridian Financial Advisors Pvt. Ltd., 3rd Floor, Nirlon Knowledge Park, Mumbai 400063\n\nSERVICES:\n1. Statutory Audit FY 2023-24 (Companies Act 2013)      INR 680,000\n2. Tax Audit u/s 44AB                                   INR 185,000\n3. GST Reconciliation & Filing (Q3 & Q4 FY24)           INR 120,000\n4. FEMA Compliance Review                               INR  95,000\n5. Internal Control Assessment (COSO Framework)         INR 240,000\n6. SEBI Compliance Verification                         INR 165,000\n\nSubtotal: INR 1,530,000 | Late Payment Surcharge: INR 84,150 | GST: INR 291,267\nTOTAL: INR 1,905,417\n\nCRITICAL FINANCIAL RISK FLAGS — COLLECTIONS ESCALATION:\nINV-0789 (Jan 15, 2024) INR 930,000 — OVERDUE 62 DAYS UNPAID\nINV-0823 (Feb 28, 2024) INR 620,000 — OVERDUE 31 DAYS UNPAID\nTOTAL OUTSTANDING: INR 3,455,417\n\nCLIENT DISTRESS INDICATORS:\n- Debt-to-Equity ratio spiked to 4.2x (from 1.8x FY23) — CRITICAL\n- Operating cash flow negative for 2 consecutive quarters\n- Two key fund managers resigned in Q4 FY24\n- SEBI show-cause notice issued March 2024\n- Three institutional clients withdrew mandates — AUM reduced 34%\n- Net worth erosion: INR 42 Crore to INR 28 Crore in 12 months\n- Interest coverage ratio: 0.8x — DANGER ZONE\n- Probability of default: 34% within 12 months\nAction: Suspend services. Pursue legal recovery.` },
-  { filename:'Q3-FY2024-Revenue-Report.txt', title:'Q3 FY2024-25 Quarterly Financial Report — Acme Corp',   company:'Acme Corporation India',     type:'report',   content:`ACME CORPORATION INDIA PVT. LTD.\nQUARTERLY FINANCIAL REPORT — Q3 FY 2024-25 (Oct 1 – Dec 31, 2024)\nCONFIDENTIAL\n\nKEY FINANCIAL METRICS:\nRevenue: INR 342.8 Cr (YoY +8.3%) | EBITDA: INR 52.4 Cr (margin 15.3%, -210bps)\nPAT: INR 4.6 Cr (PAT margin 1.3%) | EPS: INR 2.31 | Interest Expense: INR 31.8 Cr (+72.8% YoY)\n\nBALANCE SHEET:\nTotal Assets: INR 1,842 Cr | Total Debt: INR 986 Cr\nShort-term borrowings: INR 412 Cr (41.8% of debt)\nTotal Equity: INR 352 Cr | Net Debt: INR 891 Cr\n\nDEBT & LEVERAGE ANALYSIS — HIGH RISK:\nDebt-to-Equity Ratio: 2.80x (WARNING: Industry avg 1.4x — 2x above avg)\nNet Debt / EBITDA: 4.26x (CRITICAL: Covenant threshold = 4.0x — BREACH)\nInterest Coverage Ratio: 1.20x (ALERT: Minimum safe level = 1.5x — BREACH)\nDebt Service Coverage: 0.94x (BREACH: Below 1.0x = technical default risk)\n\nCOVENANT BREACH NOTICE:\nNet Debt/EBITDA of 4.26x has breached the covenant threshold of 4.0x in the\nINR 450 Crore term loan with SBI Capital Markets (SBI/TL/ACME/2022/0034).\nManagement in discussions for covenant waiver. Failure to obtain waiver by\nMarch 31, 2025 triggers cross-default on additional INR 320 Cr credit facilities.\n\nCASH FLOW: Operating INR 42.6 Cr | CapEx INR 28.4 Cr | FCF INR 14.2 Cr\nDebt Repayment INR 38.0 Cr | Net Cash Movement: INR (23.8) Cr — CASH BURN\n\nRISK FACTORS:\n1. Interest Rate Risk: 68% floating rate debt — potential INR 18-22 Cr cost if +50bps\n2. Working Capital Stress: Debtor days 67 days (up from 48 days YoY)\n3. FX Risk: Export revenues INR 61.8 Cr — hedge ratio 45% (policy: 70%)\n\nOUTLOOK Q4 FY25: Revenue guidance INR 355-375 Cr | Asset sale INR 85 Cr planned\nQIP equity raise INR 120 Cr targeted March 2025\nPrepared by: Ananya Krishnaswamy, CFO | January 15, 2025` },
-  { filename:'Annual-Audit-Report-GlobalTech.txt', title:'Annual Internal Audit Report FY2023-24 — GlobalTech', company:'GlobalTech Solutions',   type:'report',   content:`GLOBALTECH SOLUTIONS PVT. LTD.\nANNUAL INTERNAL AUDIT REPORT — FY 2023-24\nConducted by: PrimeAudit & Associates LLP | ICAI Reg: 001987N\nOVERALL RATING: SATISFACTORY WITH SIGNIFICANT OBSERVATIONS\n\nFINANCIAL PERFORMANCE FY2023-24:\nRevenue: INR 284.6 Cr (+23.1%) | EBITDA: INR 86.3 Cr (margin 30.3%)\nPAT: INR 52.1 Cr (+31.6%) | Debt-to-Equity: 0.28x | Cash: INR 98.6 Cr\nFinancial Health: STRONG — ICR 8.4x, no covenant issues\n\nACCOUNTS RECEIVABLE AUDIT:\nTotal AR: INR 94.8 Cr | Debtors >90 days: INR 18.4 Cr (19.4% — HIGH)\nProvision: INR 6.2 Cr (recommended: INR 11.8 Cr) — UNDER-PROVISIONED\n\nTop risky debtors:\n- Meridian Financial Advisors: INR 6.8 Cr (overdue >90 days, financially stressed)\n- Sunrise Retail Chain: INR 4.2 Cr (NCLT proceedings)\n- Apex Logistics: INR 2.6 Cr (disputed, legal action)\n\nHIGH SEVERITY FINDINGS:\nH-01: Increase bad debt provision by INR 5.6 Cr — profit overstated\nH-02: 14 vendor payments INR 3.84 Cr processed without three-way matching;\n      3 payments INR 82 lakh to vendors NOT in approved master list — FRAUD RISK\nH-03: 23 ex-employees retain active ERP access (SAP S/4HANA);\n      4 accounts logged activity AFTER employment cessation — DATA BREACH RISK\n      NON-COMPLIANT with IT Act 2000 — IMMEDIATE ACTION REQUIRED\n\nMEDIUM FINDINGS:\nM-01: FX hedge ratio 45% vs policy 70% | M-02: Fixed asset verification overdue\nM-03: Manual payroll overrides for 8 employees | M-04: GST ITC discrepancy INR 14.2L\n\nCompliance: Companies Act COMPLIANT | GST MINOR OBSERVATIONS | IT Act NON-COMPLIANT\nLead Auditor: CA Vikram Sharma | May 15, 2024` },
-  { filename:'Risk-Assessment-VertexCapital.txt', title:'Enterprise Risk Assessment FY2024-25 — Vertex Capital', company:'Vertex Capital Management', type:'report', content:`VERTEX CAPITAL MANAGEMENT PVT. LTD.\nENTERPRISE RISK ASSESSMENT REPORT — FY 2024-25\nSEBI-registered Category II AIF | AUM: INR 4,200 Crore\n\nPORTFOLIO RISK:\nVertex Growth Fund I: INR 1,840 Cr | IRR 19.4% | MODERATE risk\nVertex Debt Fund II: INR 980 Cr | IRR 13.8% | LOW-MODERATE risk\nVertex Opportunities III: INR 1,380 Cr | IRR 16.2% (target 20-25%) | HIGH risk\n\nINTEREST RATE RISK — HIGH:\n34% of portfolio (INR 333 Cr) in floating rate instruments\nStress test 150bps increase: NAV impact -4.2% on Debt Fund II\nHedge ratio 54% vs policy 75% — BREACH of 21 percentage points\n\nCREDIT RISK — MODERATE-HIGH:\nNPA Total: INR 186 Crore (4.4% of AUM) | Coverage: 68%\nNew NPAs Q3: INR 42 Cr\n\nSTRESSED BORROWERS:\na) Apex Infrastructure: INR 68 Cr outstanding | D/E 6.8x CRITICAL\n   DSCR below 1.0x | Partial debt service | Default probability 45%\nb) SunriseMart Retail: INR 52 Cr | NCLT IBC proceedings\n   Estimated haircut 35-50% | Provision INR 26 Cr (50%)\nc) Horizon Telecom: INR 66 Cr | Credit downgrade BBB to BB-\n   Liquidity crunch | Covenant breach on interest coverage\n\nCONCENTRATION RISK:\nReal Estate & Infrastructure: 28% vs limit of 25% — LIMIT BREACH\nNo new real estate investments until rebalanced\n\nRISK LIMITS BREACHED:\n1. Sector concentration: 28% vs 25% limit (Real Estate)\n2. Interest rate hedge ratio: 54% vs 75% policy minimum\n\nACTION PLAN:\n- Rebalance RE sector below 25% by March 31, 2025\n- Increase interest rate hedge to 75% by February 28, 2025\n- Additional NPA provision INR 22 Cr recommended\nPrepared: Rohan Agarwal, CRO | February 1, 2025` },
-  { filename:'MSA-2024-0142-NovaSys-Acme.txt', title:'Master Services Agreement — NovaSys & Acme Corp',       company:'Acme Corporation India',     type:'contract', content:`MASTER SERVICES AGREEMENT — MSA-2024-0142\nEffective: January 1, 2024 | Expiry: December 31, 2026 (3 Years)\nGoverning Law: India | Jurisdiction: Mumbai High Court\n\nPARTIES:\nProvider: NovaSys Financial Technology Ltd., Bengaluru 560025\nClient: Acme Corporation India Pvt. Ltd., Gurugram 122002\n\nSCOPE OF SERVICES:\na) SAP S/4HANA ERP implementation\nb) Financial reporting & analytics platform (IGAAP & Ind AS)\nc) Treasury management system with real-time cash flow dashboards\nd) SEBI, RBI, MCA, GST regulatory compliance module\ne) 24x7 technical support — 4-hour critical issue response SLA\n\nFINANCIAL TERMS:\nTotal Contract Value (TCV): INR 4,80,00,000 (INR 4.8 Crore)\nYear 1 (Implementation + License): INR 2,20,00,000\nYear 2 (License + Support): INR 1,40,00,000\nYear 3 (License + Support + Upgrade): INR 1,20,00,000\nLate Payment: SBI MCLR + 2% p.a. (currently 10.85% compounded monthly)\n\nFINANCIAL DEFAULT EVENTS:\na) Payment overdue >45 days\nb) Client files insolvency under IBC 2016\nc) Credit rating falls below BBB- (investment grade threshold)\nd) Change in Control without 60-day prior notice\nOn default: Service suspension, accelerated payment demand, damages\n\nLIABILITY CAP: Fees paid in preceding 12 months (~INR 1.6 Cr for Year 1)\nSECURITY: Source code escrow with NASSCOM-accredited agent\nDATA: All Client data in India only (AWS ap-south-1) — DPDP Act 2023 compliant\nTERMINATION: 90-day notice + 3-month termination fee (convenience termination)\nDISPUTE RESOLUTION: Arbitration (Arbitration & Conciliation Act 1996) | Seat: Mumbai` },
-  { filename:'TermLoan-SBI-AcmeCorp.txt', title:'Term Loan Agreement — SBI & Acme Corp (INR 45 Crore)',        company:'Acme Corporation India',     type:'contract', content:`TERM LOAN AGREEMENT — TL/SBI/ACME/2022/0034\nLoan Amount: INR 45,00,00,000 | Sanction: Sep 15, 2022 | Maturity: Sep 30, 2027\nLender: State Bank of India, Corporate Banking, Nariman Point, Mumbai\nBorrower: Acme Corporation India Pvt. Ltd., Gurugram 122002\n\nINTEREST: SBI MCLR (1-yr) + 175 bps = 10.60% p.a. (floating, resets annually)\nREPAYMENT: Quarterly principal + monthly interest | 18-month moratorium\n\nSECURITY:\nPrimary: First pari passu charge on all movable fixed assets (value INR 82 Cr, cover 1.82x)\n         First pari passu charge on current assets (INR 124 Cr book value)\nCollateral: Equitable mortgage — Raheja Towers, Nariman Point (value INR 34 Cr)\n            Personal Guarantee: Vikrant Mehta, MD (net worth INR 28 Cr)\nCurrent Security Cover: 1.48x (declining) | Minimum required: 1.25x\n\nFINANCIAL COVENANTS — STATUS:\nDebt Service Coverage Ratio: Required >=1.20x | Actual 0.94x — BREACH\nNet Debt / EBITDA: Required <=4.00x | Actual 4.26x — BREACH\nInterest Coverage Ratio: Required >=1.50x | Actual 1.20x — BREACH\nDebt-to-Equity: Required <=3.00x | Actual 2.80x — OK (near limit)\nCurrent Ratio: Required >=1.10x | Actual 1.28x — OK\n\nCOVENANT BREACH NOTICE:\nSBI issued Covenant Breach Notice SBI/CB/ACME/2025/001 dated January 10, 2025.\nBorrower has 45 days (by Feb 24, 2025) to: cure breach, get waiver, or add security.\nFailure triggers cross-default on additional INR 320 Cr in other credit facilities.\nLoan Classification: STANDARD (SMA-0 watch — monitoring intensified)\n\nEVENTS OF DEFAULT: Payment default >5 days | Covenant breach >45 days\nCross-default >INR 5 Cr | Material adverse change | IBC filing\nOn default: Accelerated repayment | SARFAESI enforcement | DRT/NCLT proceedings\n\nCURRENT STATUS (Jan 2025):\nOriginal: INR 45 Cr | Repaid: INR 7.5 Cr | Outstanding: INR 37.5 Cr\nAll interest paid to date | Next principal: INR 1.875 Cr due Jan 1, 2025` },
-  { filename:'IMA-VertexCapital-Fund3.txt', title:'Investment Management Agreement — Vertex Capital Fund III',  company:'Vertex Capital Management',   type:'contract', content:`INVESTMENT MANAGEMENT AGREEMENT — IMA-VC-2024-007\nEffective: April 1, 2024 | Fund: Vertex Opportunities Fund III\nSEBI Registration: IN/AIF2/23-24/1234 (Category II AIF)\nManager: Vertex Capital Management Pvt. Ltd., SEBI IA: INA000012345\nInvestor: Pinnacle Pension Trust, Mumbai (Domestic Institutional Investor)\n\nCOMMITMENT: INR 200,00,00,000 (INR 200 Crore)\nDRAWDOWN:\nTranche 1: INR 60 Cr — April 15, 2024 (initial portfolio)\nTranche 2: INR 50 Cr — August 1, 2024 (follow-on)\nTranche 3: INR 50 Cr — January 1, 2025 (new deals)\nTranche 4: INR 40 Cr — July 1, 2025 (reserve)\n\nINVESTMENT STRATEGY:\n- Unlisted equity & equity-linked instruments in Indian companies\n- Structured credit to mid-market (revenue INR 100-500 Cr)\n- Special situations / stressed asset opportunities\n- Max 30% in listed securities\nProhibited: Direct real estate, commodities, derivatives (except hedging)\n\nFEES & ECONOMICS:\nManagement Fee: 2.0% p.a. on committed capital (investment period)\n                1.5% p.a. on invested capital (harvest period)\nCarried Interest: 20% of profits above 10% IRR hurdle rate (compounded)\n100% catch-up to manager once hurdle cleared | High-water mark applies\n\nIllustrative Returns (18% gross IRR, INR 200 Cr, 5 years):\nGross Return: ~INR 490 Cr | Mgmt Fees: (INR 19 Cr) | Carry (20%): (INR 69.8 Cr)\nNet IRR to Investor: ~15.3%\n\nCONCENTRATION LIMITS:\nSingle investment: max 15% corpus | Single sector: max 25% corpus\nFund-level leverage: NOT PERMITTED (Category II AIF restriction)\n\nKEY MAN CLAUSE:\nIf both Priya Kapoor (MD) AND Suresh Nair (CFO) cease involvement:\n- New investments suspended 180 days\n- LPs may vote (simple majority) to wind up Fund\n\nRISK DISCLOSURES (SEBI AIF Regulations 2012):\n- LIQUIDITY RISK: Unlisted/illiquid securities — full fund life (7+ years)\n- LEVERAGE RISK: Portfolio companies with D/E >3x require IC approval\n- CONCENTRATION RISK: Real estate 28% vs 25% guideline — rebalancing in progress\n- PERFORMANCE RISK: Current IRR 16.2% below 20-25% target\nSigned: Priya Kapoor (Manager) & Harish Desai, CIO (Investor) | April 1, 2024` },
+  { filename:'INV-2047-AcmeCorp.txt', title:'Invoice #INV-2047 — GlobalTech to Acme Corp', company:'Acme Corporation India', type:'invoice', content:`INVOICE\n================================================================================\nInvoice Number  : INV-2047\nInvoice Date    : March 15, 2024\nDue Date        : April 14, 2024\nPayment Terms   : Net 30\n\nFROM (Vendor): GlobalTech Solutions Pvt. Ltd., Suite 800, Towers West, Bandra Kurla Complex, Mumbai 400051\nGSTIN: 27AABCG1234F1ZK | PAN: AABCG1234F\n\nTO (Bill To): Acme Corporation India Pvt. Ltd., 14th Floor, DLF Cyber City, Gurugram 122002\nGSTIN: 06AABCA5678M1ZT | PAN: AABCA5678M\n\nSERVICES RENDERED:\n1. Enterprise Cloud Infrastructure (Annual Subscription - AWS Managed)  INR 850,000\n2. Cybersecurity Monitoring Service (Monthly Retainer x12)              INR 510,000\n3. Data Analytics Platform License (5 seats annual)                     INR 325,000\n4. Professional Implementation Services (120 hrs @ 3,500)               INR 420,000\n5. 24x7 Technical Support Package (Premium SLA Annual)                  INR  95,000\n\nSubtotal: INR 2,200,000 | GST 18%: INR 396,000 | TOTAL: INR 2,596,000\n\nFINANCIAL RISK NOTES:\n- Acme Corporation outstanding balance (prior invoices): INR 1,840,000\n- Combined exposure: INR 4,436,000\n- Credit limit: INR 5,000,000 | Available headroom: INR 564,000 (11.3%)\n- Customer credit rating: B+ (moderate risk)\n- Days Sales Outstanding (DSO) for this account: 47 days (industry avg 32)\n- Late payment attracts interest at 18% per annum\n- Recommended: Flag for collections review if not received by Apr 21, 2024\n\nBANK: HDFC Bank | IFSC: HDFC0001234 | Acct: 50200123456789\nAuthorised: Rajesh Kumar, CFO, GlobalTech Solutions Pvt. Ltd.` },
+  { filename:'INV-3312-VertexCapital.txt', title:'Invoice #INV-3312 — NovaSys to Vertex Capital', company:'Vertex Capital Management', type:'invoice', content:`INVOICE\n================================================================================\nInvoice Number: INV-3312 | Date: March 28, 2024 | Due: April 27, 2024\nFROM: NovaSys Financial Technology Ltd., WeWork Galaxy, 43 Residency Road, Bengaluru 560025\nTO: Vertex Capital Management Pvt. Ltd., Unit 1201, One BKC Tower, Mumbai 400051\n\nSERVICES:\n1. Algorithmic Trading Platform (White-label Q1 2024)       INR 1,250,000\n2. Real-time Market Data Feed (Bloomberg, NSE, BSE)         INR   540,000\n3. Risk Management Engine (VaR & Stress Testing Suite)      INR   475,000\n4. Regulatory Compliance Reporting (SEBI, RBI automated)    INR   320,000\n5. Portfolio Analytics Dashboard (8 seats)                  INR   440,000\n6. API Integration & Custom Dev (85 hrs @ 4,800)            INR   408,000\n7. Data Migration & Onboarding (one-time)                   INR   185,000\n\nSubtotal: INR 3,618,000 | IGST 18%: INR 651,240 | TOTAL: INR 4,269,240\n\nCLIENT FINANCIAL RISK ASSESSMENT:\n- AUM: INR 4,200 Crore | Revenue FY23-24: INR 38.5 Crore\n- Current Ratio: 1.82 (Adequate) | Debt-to-Equity Ratio: 0.43x (LOW RISK)\n- Payment History Score: 96/100 (Excellent) | Zero delinquencies in 14 invoices\n- Average Payment Speed: 18 days (ahead of Net 30)\n- Credit Limit: INR 10,000,000 | Risk Classification: LOW — GREEN\nAuthorised: Priya Nair, Head of Finance, NovaSys Financial Technology Ltd.` },
+  { filename:'INV-0891-MeridianAdvisors.txt', title:'Invoice #INV-0891 — PrimeAudit to Meridian (OVERDUE)', company:'Meridian Financial Advisors', type:'invoice', content:`INVOICE — COLLECTIONS ESCALATION\n================================================================================\nInvoice Number: INV-0891 | Date: April 1, 2024 | OVERDUE ACCOUNT FLAG\nFROM: PrimeAudit & Associates LLP, Plot 45, Sector 32, Gurugram 122001 | ICAI: 001987N\nTO: Meridian Financial Advisors Pvt. Ltd., 3rd Floor, Nirlon Knowledge Park, Mumbai 400063\n\nSERVICES:\n1. Statutory Audit FY 2023-24 (Companies Act 2013)      INR 680,000\n2. Tax Audit u/s 44AB                                   INR 185,000\n3. GST Reconciliation & Filing (Q3 & Q4 FY24)           INR 120,000\n4. FEMA Compliance Review                               INR  95,000\n5. Internal Control Assessment (COSO Framework)         INR 240,000\n6. SEBI Compliance Verification                         INR 165,000\n\nSubtotal: INR 1,530,000 | Late Payment Surcharge: INR 84,150 | GST: INR 291,267\nTOTAL: INR 1,905,417\n\nCRITICAL FINANCIAL RISK FLAGS:\nINV-0789 (Jan 15, 2024) INR 930,000 — OVERDUE 62 DAYS UNPAID\nINV-0823 (Feb 28, 2024) INR 620,000 — OVERDUE 31 DAYS UNPAID\nTOTAL OUTSTANDING: INR 3,455,417\n\nCLIENT DISTRESS INDICATORS:\n- Debt-to-Equity ratio spiked to 4.2x (from 1.8x FY23) — CRITICAL\n- Operating cash flow negative for 2 consecutive quarters\n- Two key fund managers resigned in Q4 FY24\n- SEBI show-cause notice issued March 2024\n- Three institutional clients withdrew mandates — AUM reduced 34%\n- Net worth erosion: INR 42 Crore to INR 28 Crore in 12 months\n- Interest coverage ratio: 0.8x — DANGER ZONE\n- Probability of default: 34% within 12 months\nAction: Suspend services. Pursue legal recovery.` },
+  { filename:'Q3-FY2024-Revenue-Report.txt', title:'Q3 FY2024-25 Quarterly Financial Report — Acme Corp', company:'Acme Corporation India', type:'report', content:`ACME CORPORATION INDIA PVT. LTD.\nQUARTERLY FINANCIAL REPORT — Q3 FY 2024-25 (Oct 1 – Dec 31, 2024)\nCONFIDENTIAL\n\nKEY FINANCIAL METRICS:\nRevenue: INR 342.8 Cr (YoY +8.3%) | EBITDA: INR 52.4 Cr (margin 15.3%, -210bps)\nPAT: INR 4.6 Cr (PAT margin 1.3%) | EPS: INR 2.31 | Interest Expense: INR 31.8 Cr (+72.8% YoY)\n\nBALANCE SHEET:\nTotal Assets: INR 1,842 Cr | Total Debt: INR 986 Cr\nShort-term borrowings: INR 412 Cr (41.8% of debt)\nTotal Equity: INR 352 Cr | Net Debt: INR 891 Cr\n\nDEBT & LEVERAGE ANALYSIS — HIGH RISK:\nDebt-to-Equity Ratio: 2.80x (WARNING: Industry avg 1.4x — 2x above avg)\nNet Debt / EBITDA: 4.26x (CRITICAL: Covenant threshold = 4.0x — BREACH)\nInterest Coverage Ratio: 1.20x (ALERT: Minimum safe level = 1.5x — BREACH)\nDebt Service Coverage: 0.94x (BREACH: Below 1.0x = technical default risk)\n\nCOVENANT BREACH NOTICE:\nNet Debt/EBITDA of 4.26x has breached the covenant threshold of 4.0x.\nManagement in discussions for covenant waiver. Failure to obtain waiver by\nMarch 31, 2025 triggers cross-default on additional INR 320 Cr credit facilities.\n\nCASH FLOW: Operating INR 42.6 Cr | CapEx INR 28.4 Cr | FCF INR 14.2 Cr\nDebt Repayment INR 38.0 Cr | Net Cash Movement: INR (23.8) Cr — CASH BURN\n\nRISK FACTORS:\n1. Interest Rate Risk: 68% floating rate debt\n2. Working Capital Stress: Debtor days 67 days (up from 48 days YoY)\n3. FX Risk: Export revenues INR 61.8 Cr — hedge ratio 45% (policy: 70%)\n\nOUTLOOK Q4 FY25: Revenue guidance INR 355-375 Cr\nPrepared by: Ananya Krishnaswamy, CFO | January 15, 2025` },
+  { filename:'Annual-Audit-Report-GlobalTech.txt', title:'Annual Internal Audit Report FY2023-24 — GlobalTech', company:'GlobalTech Solutions', type:'report', content:`GLOBALTECH SOLUTIONS PVT. LTD.\nANNUAL INTERNAL AUDIT REPORT — FY 2023-24\nConducted by: PrimeAudit & Associates LLP | ICAI Reg: 001987N\nOVERALL RATING: SATISFACTORY WITH SIGNIFICANT OBSERVATIONS\n\nFINANCIAL PERFORMANCE FY2023-24:\nRevenue: INR 284.6 Cr (+23.1%) | EBITDA: INR 86.3 Cr (margin 30.3%)\nPAT: INR 52.1 Cr (+31.6%) | Debt-to-Equity: 0.28x | Cash: INR 98.6 Cr\n\nHIGH SEVERITY FINDINGS:\nH-01: Increase bad debt provision by INR 5.6 Cr — profit overstated\nH-02: 14 vendor payments INR 3.84 Cr processed without three-way matching — FRAUD RISK\nH-03: 23 ex-employees retain active ERP access — DATA BREACH RISK\n      NON-COMPLIANT with IT Act 2000 — IMMEDIATE ACTION REQUIRED\n\nMEDIUM FINDINGS:\nM-01: FX hedge ratio 45% vs policy 70%\nM-02: Fixed asset verification overdue\nM-03: Manual payroll overrides for 8 employees\nM-04: GST ITC discrepancy INR 14.2L\n\nCompliance: Companies Act COMPLIANT | IT Act NON-COMPLIANT\nLead Auditor: CA Vikram Sharma | May 15, 2024` },
+  { filename:'Risk-Assessment-VertexCapital.txt', title:'Enterprise Risk Assessment FY2024-25 — Vertex Capital', company:'Vertex Capital Management', type:'report', content:`VERTEX CAPITAL MANAGEMENT PVT. LTD.\nENTERPRISE RISK ASSESSMENT REPORT — FY 2024-25\nSEBI-registered Category II AIF | AUM: INR 4,200 Crore\n\nPORTFOLIO RISK:\nVertex Growth Fund I: INR 1,840 Cr | IRR 19.4% | MODERATE risk\nVertex Debt Fund II: INR 980 Cr | IRR 13.8% | LOW-MODERATE risk\nVertex Opportunities III: INR 1,380 Cr | IRR 16.2% (target 20-25%) | HIGH risk\n\nINTEREST RATE RISK — HIGH:\nHedge ratio 54% vs policy 75% — BREACH of 21 percentage points\n\nCREDIT RISK — MODERATE-HIGH:\nNPA Total: INR 186 Crore (4.4% of AUM)\n\nSTRESSED BORROWERS:\na) Apex Infrastructure: INR 68 Cr | D/E 6.8x CRITICAL | Default probability 45%\nb) SunriseMart Retail: INR 52 Cr | NCLT IBC proceedings\nc) Horizon Telecom: INR 66 Cr | Covenant breach on interest coverage\n\nCONCENTRATION RISK:\nReal Estate & Infrastructure: 28% vs limit of 25% — LIMIT BREACH\n\nPrepared: Rohan Agarwal, CRO | February 1, 2025` },
+  { filename:'MSA-2024-0142-NovaSys-Acme.txt', title:'Master Services Agreement — NovaSys & Acme Corp', company:'Acme Corporation India', type:'contract', content:`MASTER SERVICES AGREEMENT — MSA-2024-0142\nEffective: January 1, 2024 | Expiry: December 31, 2026 (3 Years)\nGoverning Law: India | Jurisdiction: Mumbai High Court\n\nPARTIES:\nProvider: NovaSys Financial Technology Ltd., Bengaluru 560025\nClient: Acme Corporation India Pvt. Ltd., Gurugram 122002\n\nFINANCIAL TERMS:\nTotal Contract Value (TCV): INR 4,80,00,000 (INR 4.8 Crore)\nLate Payment: SBI MCLR + 2% p.a. (currently 10.85% compounded monthly)\n\nFINANCIAL DEFAULT EVENTS:\na) Payment overdue >45 days\nb) Client files insolvency under IBC 2016\nc) Credit rating falls below BBB-\nd) Change in Control without 60-day prior notice\nOn default: Service suspension, accelerated payment demand, damages\n\nTERMINATION: 90-day notice + 3-month termination fee\nDISPUTE RESOLUTION: Arbitration | Seat: Mumbai` },
+  { filename:'TermLoan-SBI-AcmeCorp.txt', title:'Term Loan Agreement — SBI & Acme Corp (INR 45 Crore)', company:'Acme Corporation India', type:'contract', content:`TERM LOAN AGREEMENT — TL/SBI/ACME/2022/0034\nLoan Amount: INR 45,00,00,000 | Sanction: Sep 15, 2022 | Maturity: Sep 30, 2027\nLender: State Bank of India, Corporate Banking, Nariman Point, Mumbai\nBorrower: Acme Corporation India Pvt. Ltd., Gurugram 122002\n\nINTEREST: SBI MCLR (1-yr) + 175 bps = 10.60% p.a. (floating)\n\nSECURITY:\nPrimary: First pari passu charge on all movable fixed assets (value INR 82 Cr)\nCollateral: Equitable mortgage — Raheja Towers, Nariman Point (value INR 34 Cr)\n            Personal Guarantee: Vikrant Mehta, MD (net worth INR 28 Cr)\n\nFINANCIAL COVENANTS — STATUS:\nDebt Service Coverage Ratio: Required >=1.20x | Actual 0.94x — BREACH\nNet Debt / EBITDA: Required <=4.00x | Actual 4.26x — BREACH\nInterest Coverage Ratio: Required >=1.50x | Actual 1.20x — BREACH\n\nCOVENANT BREACH NOTICE:\nSBI issued Covenant Breach Notice dated January 10, 2025.\nBorrower has 45 days to cure breach, get waiver, or add security.\nFailure triggers cross-default on additional INR 320 Cr in other credit facilities.\n\nCURRENT STATUS (Jan 2025):\nOriginal: INR 45 Cr | Repaid: INR 7.5 Cr | Outstanding: INR 37.5 Cr` },
+  { filename:'IMA-VertexCapital-Fund3.txt', title:'Investment Management Agreement — Vertex Capital Fund III', company:'Vertex Capital Management', type:'contract', content:`INVESTMENT MANAGEMENT AGREEMENT — IMA-VC-2024-007\nEffective: April 1, 2024 | Fund: Vertex Opportunities Fund III\nSEBI Registration: IN/AIF2/23-24/1234 (Category II AIF)\n\nCOMMITMENT: INR 200,00,00,000 (INR 200 Crore)\n\nFEES & ECONOMICS:\nManagement Fee: 2.0% p.a. on committed capital\nCarried Interest: 20% of profits above 10% IRR hurdle rate\n\nCONCENTRATION LIMITS:\nSingle investment: max 15% corpus | Single sector: max 25% corpus\nFund-level leverage: NOT PERMITTED (Category II AIF restriction)\n\nKEY MAN CLAUSE:\nIf both Priya Kapoor (MD) AND Suresh Nair (CFO) cease involvement:\n- New investments suspended 180 days\n- LPs may vote (simple majority) to wind up Fund\n\nRISK DISCLOSURES:\n- LIQUIDITY RISK: Unlisted/illiquid securities\n- CONCENTRATION RISK: Real estate 28% vs 25% guideline — rebalancing in progress\nSigned: Priya Kapoor (Manager) & Harish Desai, CIO (Investor) | April 1, 2024` },
 ];
 
 async function seedAndLoad() {
@@ -1309,7 +1246,6 @@ async function seedAndLoad() {
   let uploaded = 0, indexed = 0;
   for(const doc of SAMPLE_DOCS) {
     try {
-      // Create file blob from inline content
       const blob = new Blob([doc.content], {type:'text/plain'});
       const file = new File([blob], doc.filename, {type:'text/plain'});
       const fd = new FormData();
@@ -1322,7 +1258,6 @@ async function seedAndLoad() {
         const d = await r.json();
         uploaded++;
         addActivity('upload', `"${doc.title.slice(0,45)}" uploaded`);
-        // Auto-index
         const ir = await fetch(API+`/rag/index-document?document_id=${d.document_id}`, {method:'POST', headers:headers()});
         if(ir.ok) { d.is_indexed='indexed'; indexed++; }
         allDocs.unshift(d);
@@ -1343,13 +1278,11 @@ function tryQuery(q) {
   }, 200);
 }
 
-// ─── Bootstrap ───────────────────────────────
 if(token && currentUser) {
   initApp();
 } else {
   document.getElementById('auth-screen').style.display='flex';
 }
-// Auto-seed demo data hint
 setTimeout(()=>{
   if(token && !allRoles.length) seedRoles();
 },2000);
