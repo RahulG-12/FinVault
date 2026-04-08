@@ -1,85 +1,59 @@
-from fastapi import FastAPI, Request
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
-from app.api.routes import auth, documents, roles, users, rag
-from app.core.database import engine, Base
+from fastapi import APIRouter, Depends, HTTPException, status
+from sqlalchemy.orm import Session
+from app.core.database import get_db
+from app.core.security import hash_password, verify_password, create_access_token
+from app.models.user import User
+from app.schemas.schemas import UserRegister, UserLogin, TokenResponse, UserOut
 
-Base.metadata.create_all(bind=engine)
+router = APIRouter()
 
-app = FastAPI(
-    title="FinVault - Financial Document Intelligence",
-    description="AI-powered financial document management with semantic analysis",
-    version="1.0.0",
-    docs_url="/api/docs",
-    redoc_url="/api/redoc"
-)
-
-# ── CORS ─────────────────────────────────────────────────────────────────────
-# IMPORTANT: allow_origins=["*"] is INCOMPATIBLE with allow_credentials=True.
-# The browser blocks it. List every frontend origin explicitly instead.
-ALLOWED_ORIGINS = [
-    # Local dev
-    "http://localhost:3000",
-    "http://localhost:5173",
-    "http://localhost:8080",
-    "http://127.0.0.1:3000",
-    "http://127.0.0.1:5173",
-    # Vercel — add every preview/production URL you deploy to
-    "https://fin-vault-woad.vercel.app",
-    "https://finvault.vercel.app",
-    # "null" covers opening index.html directly from disk (file://)
-    "null",
-]
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
-    allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-    allow_headers=[
-        "Authorization",
-        "Content-Type",
-        "Accept",
-        "Origin",
-        "X-Requested-With",
-        "Access-Control-Request-Method",
-        "Access-Control-Request-Headers",
-    ],
-    expose_headers=["Content-Disposition"],
-    max_age=600,
-)
-
-
-# ── Preflight catch-all ───────────────────────────────────────────────────────
-# Render free tier sometimes drops OPTIONS before middleware processes it.
-# This explicit handler guarantees every preflight returns 200 immediately.
-@app.options("/{rest_of_path:path}")
-async def preflight_handler(request: Request, rest_of_path: str):
-    origin = request.headers.get("origin", "")
-    response = JSONResponse(content={"detail": "OK"}, status_code=200)
-    if origin in ALLOWED_ORIGINS:
-        response.headers["Access-Control-Allow-Origin"] = origin
-    response.headers["Access-Control-Allow-Methods"] = "GET,POST,PUT,PATCH,DELETE,OPTIONS"
-    response.headers["Access-Control-Allow-Headers"] = (
-        "Authorization, Content-Type, Accept, Origin, X-Requested-With"
+@router.post("/register", response_model=UserOut, status_code=201)
+def register(data: UserRegister, db: Session = Depends(get_db)):
+    # Check if username or email already exists
+    if db.query(User).filter(User.username == data.username).first():
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST, 
+            detail="Username already registered"
+        )
+    if db.query(User).filter(User.email == data.email).first():
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST, 
+            detail="Email already registered"
+        )
+    
+    # Create new user instance
+    user = User(
+        username=data.username,
+        email=data.email,
+        full_name=data.full_name,
+        hashed_password=hash_password(data.password),
     )
-    response.headers["Access-Control-Allow-Credentials"] = "true"
-    response.headers["Access-Control-Max-Age"] = "600"
-    return response
+    
+    db.add(user)
+    db.commit()
+    db.refresh(user)
+    return user
 
-
-app.include_router(auth.router,      prefix="/auth",      tags=["Authentication"])
-app.include_router(documents.router, prefix="/documents",  tags=["Documents"])
-app.include_router(roles.router,     prefix="/roles",      tags=["Roles"])
-app.include_router(users.router,     prefix="/users",      tags=["Users"])
-app.include_router(rag.router,       prefix="/rag",        tags=["RAG & Semantic Search"])
-
-
-@app.get("/")
-def root():
-    return {"message": "FinVault API is running", "version": "1.0.0"}
-
-
-@app.get("/health")
-def health():
-    return {"status": "healthy"}
+@router.post("/login", response_model=TokenResponse)
+def login(data: UserLogin, db: Session = Depends(get_db)):
+    # 1. Fetch user from database
+    user = db.query(User).filter(User.username == data.username).first()
+    
+    # 2. Validate user and password
+    # If this fails, HTTPException stops the function immediately
+    if not user or not verify_password(data.password, user.hashed_password):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, 
+            detail="Invalid credentials"
+        )
+    
+    # 3. Generate the JWT access token
+    # Fixed: This line is now guaranteed to run after validation passes
+    token = create_access_token({"sub": str(user.id)})
+    
+    # 4. Return the successful response
+    return TokenResponse(
+        access_token=token, 
+        user_id=user.id, 
+        username=user.username
+    )
