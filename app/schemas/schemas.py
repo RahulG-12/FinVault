@@ -27,7 +27,7 @@ class UserOut(BaseModel):
     is_active: bool
     created_at: datetime
     class Config:
-        from_attributes = True
+        orm_mode = True
 
 # Roles
 class RoleCreate(BaseModel):
@@ -41,7 +41,7 @@ class RoleOut(BaseModel):
     description: Optional[str]
     created_at: datetime
     class Config:
-        from_attributes = True
+        orm_mode = True
 
 class AssignRole(BaseModel):
     user_id: int
@@ -60,7 +60,7 @@ class DocumentOut(BaseModel):
     is_indexed: str
     created_at: datetime
     class Config:
-        from_attributes = True
+        orm_mode = True
 
 class DocumentSearch(BaseModel):
     title: Optional[str] = None

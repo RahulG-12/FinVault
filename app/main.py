@@ -1,13 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.core.database import engine, Base
-
-# ✅ Import all 3 models so SQLAlchemy creates all tables
-from app.models.user import User
-from app.models.document import Document
-from app.models.role import Role
-
 from app.api.routes import auth, documents, roles, users, rag
+from app.core.database import engine, Base
 
 Base.metadata.create_all(bind=engine)
 
@@ -21,7 +15,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://finvault-drab.vercel.app", "https://fin-vault-woad.vercel.app"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
