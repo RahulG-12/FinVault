@@ -859,7 +859,9 @@
 <div id="toast-container"></div>
 
 <script>
-const API = 'https://finvault-2.onrender.com';
+const API = window.FINVAULT_API_URL
+  || (hostname === 'localhost' ? 'http://localhost:8000'
+                               : 'https://finvault-2.onrender.com');
 let token = localStorage.getItem('fv_token') || '';
 let currentUser = JSON.parse(localStorage.getItem('fv_user') || 'null');
 let allDocs = [];
